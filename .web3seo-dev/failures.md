@@ -57,3 +57,26 @@ After fix, same 10 responses produced 44 mentions across 24 protocols. Top 10 ar
 **Notes for future**:
 - Across Protocol IS a real bridge — current stoplist drops it. Acceptable v1 trade-off (it's mentioned rarely; English "across" matches dominate). Revisit if Across becomes a frequently-discussed protocol in queries.
 - TVL threshold of $1M is conservative; can tune higher ($10M) if noise persists, lower if we want long-tail coverage.
+
+---
+
+## 2026-05-08 — Grok model slug `x-ai/grok-2` 404'd by OpenRouter
+
+**Symptom**: First 4-model real run (50 q × 4). Three of four models all 50/50 saved, but `x-ai/grok-2` returned **50/50 errors**, all `HTTPStatusError 404 Not Found`.
+
+**Root cause**: OpenRouter has deprecated/removed `x-ai/grok-2` from their model catalog. xAI's current flagship is `x-ai/grok-4.20` (released 2026-03-31). I'd hardcoded the older slug from memory rather than verifying against the current catalog.
+
+This is the **gemini-flash-lite lesson again** (Corvus D-039) — vendor model slugs change. Hardcoded slugs without periodic verification are a vendor-lock failure mode that even OpenRouter's abstraction can't prevent.
+
+**Fix** (`web3seo/providers/openrouter.py`):
+- `DEFAULT_MODELS`: replaced `x-ai/grok-2` → `x-ai/grok-4.20`
+- Updated pricing accordingly ($2/M → $1.25/M input, $10/M → $2.50/M output — newer model is cheaper, nice).
+- Inline comment with link to verify on price changes.
+
+**Prevention**:
+1. **Process**: when a model errors with 404 / "model_not_found", first check OpenRouter's model catalog at https://openrouter.ai/models before debugging code.
+2. **Idea (deferred)**: a quarterly `scripts/refresh_model_catalog.py` that pulls live OpenRouter model list and warns on slugs in `DEFAULT_MODELS` that no longer exist. Defer until we have ≥ 3 such incidents.
+
+**Notes**:
+- Other 3 models all worked end-to-end through the full pipeline. Idempotency + fail-soft worked: the 50 Grok errors didn't crash the run; the other 150 successful responses still flowed through extract + aggregate normally.
+- Errors table now has 50 stale `x-ai/grok-2` entries. Could prune them but they're useful as a record. Leave for now.

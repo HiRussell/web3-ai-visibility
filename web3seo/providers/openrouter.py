@@ -197,11 +197,15 @@ DEFAULT_MODELS: list[OpenRouterModelConfig] = [
         output_usd_per_m=10.0,
     ),
     OpenRouterModelConfig(
-        model="x-ai/grok-2",
-        display_name="Grok 2",
+        # x-ai/grok-2 was 404'd by OpenRouter on first real run 2026-05-08.
+        # Switched to grok-4.20 (released 2026-03-31, xAI's new flagship).
+        # Pricing 2026-05: $1.25/M in, $2.50/M out, 2M context.
+        # Verify on https://openrouter.ai/x-ai/grok-4.20 if pricing breaks again.
+        model="x-ai/grok-4.20",
+        display_name="Grok 4.20",
         has_native_search=False,
-        input_usd_per_m=2.0,
-        output_usd_per_m=10.0,
+        input_usd_per_m=1.25,
+        output_usd_per_m=2.50,
     ),
     OpenRouterModelConfig(
         model="google/gemini-2.0-flash-001",
