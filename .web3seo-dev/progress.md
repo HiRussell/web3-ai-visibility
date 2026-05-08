@@ -34,16 +34,25 @@
 - [x] **Total: 19 tests passing** (10 openrouter + e2e, 9 smoke)
 - [x] CLI dry-run verified: 4 models × 50 queries listed, $0.96 cost estimate
 
-## Next: real cron run with live OpenRouter key
+## C — First real run + false-positive fix ✅ DONE 2026-05-08
 
-Acceptance:
-- Set `OPENROUTER_API_KEY` in `.env` (one key, all 4 models)
-- `uv run python scripts/run_daily.py --date 2026-05-07` produces non-empty snapshot at `frontend/public/snapshots/2026-05-07.json`
-- Snapshot has at least 5 protocols mentioned across 50 queries × 4 models = 200 calls
-- `errors` table empty for happy path (or near-empty — some flakiness expected from any single model)
-- Cost stays under $2 (dry-run estimated ~$0.96 across 4 models)
-- `responses.citations_json` populated for Perplexity at minimum; gpt-4o:online / grok:online / gemini:online may also populate via OpenRouter's web_search plugin
-- Manually inspect 2-3 raw responses per model, confirm protocol names look right + citations make sense
+- [x] Live `OPENROUTER_API_KEY` configured
+- [x] First real run: `--limit-queries 10 --models perplexity/sonar-pro`
+- [x] 10/10 saved, 0 errors, 53 citation hosts captured
+- [x] OpenRouter → Perplexity citation passthrough verified ✓
+- [x] **Failure mode caught**: protocol leaderboard polluted by chain slugs + English-word slugs (see failures.md 2026-05-08)
+- [x] Fix: `CanonicalIndex.DEFAULT_STOPLIST` + `DEFAULT_MIN_TVL_USD = $1M`
+- [x] After fix: top 10 all legitimate (Lido / Kalshi / Beefy / SushiSwap / Frax / ...)
+- [x] 23/23 tests passing (added 4 cases for stoplist/TVL filter regression guard)
+- [x] First commit pushed to `HiRussell/web3-ai-visibility` (private)
+- [x] Project-level `CLAUDE.md` added with permission overrides for this hobby project
+
+## Next: scale data run
+
+Plan:
+1. Run all 50 queries × Perplexity Sonar Pro (~$0.50). Density check + see what real protocol leaderboard looks like with 5x more data.
+2. Inspect: top 20 protocols, top 30 citation hosts, model bias, query coverage. Iterate stoplist if more false positives surface.
+3. Decide: stay Perplexity-only weekly cadence ($18/month) or scale to 4 models ($170/month) for cross-model comparison.
 
 ## Later
 

@@ -32,18 +32,65 @@ class CanonicalIndex:
 
     Word-boundary regex matching avoids partial-word false positives
     (e.g. "uni" inside "unison" should not match Uniswap).
+
+    Two layers of false-positive defense (added 2026-05-08 after first real
+    run flooded leaderboard with English-word and chain-name false positives):
+    1. STOPLIST: hard-block slugs that are common English words or chain names
+    2. min_tvl_usd: protocols below this TVL aren't loaded into the index
     """
 
-    MIN_ALIAS_LEN = 3  # below this, false-positive rate is too high
+    MIN_ALIAS_LEN = 3
+    DEFAULT_MIN_TVL_USD = 1_000_000.0
 
-    def __init__(self, protocols: list[Protocol]):
-        self.protocols: dict[str, Protocol] = {p.id: p for p in protocols}
-        self._lookup: dict[str, str] = {}
+    # Hard exclusion list — these slugs are common English words or chain
+    # names that produce massive false-positive volume. Net signal loss from
+    # missing the legitimate-but-rare protocol case is < net gain in clean
+    # leaderboard. Add to this when you see a new false-positive pattern in
+    # `.web3seo-dev/failures.md`.
+    DEFAULT_STOPLIST: frozenset[str] = frozenset({
+        # Chains (DefiLlama lists chain-level TVL aggregations as "protocols")
+        "ethereum", "solana", "arbitrum", "avalanche", "polygon", "base",
+        "optimism", "bnb", "binance", "tron", "fantom", "cronos", "celo",
+        "aurora", "moonbeam", "moonriver", "harmony", "metis", "linea",
+        "blast", "scroll", "mantle", "manta", "zksync", "starknet",
+        "sui", "aptos", "near", "ton", "kaspa", "sei", "injective",
+
+        # English-word slugs — high false-positive rate with no easy disambiguation
+        "use", "market", "depth", "current", "gravity", "cap", "backed",
+        "scale", "across", "next", "back", "core", "level", "bridge",
+        "pool", "vault", "token", "node", "wallet", "exchange", "swap",
+        "bond", "trust", "trust-finance", "echo", "stream", "wave",
+        "ramp", "yield", "stake", "staking", "lend", "lending", "borrow",
+        "amber", "alpha", "beta", "gamma", "delta", "omega",
+        "venture", "capital", "fund", "growth", "value",
+    })
+
+    def __init__(
+        self,
+        protocols: list[Protocol],
+        *,
+        min_tvl_usd: float = DEFAULT_MIN_TVL_USD,
+        stoplist: frozenset[str] | None = None,
+    ):
+        stoplist = stoplist if stoplist is not None else self.DEFAULT_STOPLIST
+
+        # Filter at the protocol level — a slug in stoplist or below TVL floor
+        # is dropped entirely (its name and aliases also won't be looked up).
+        kept = []
         for p in protocols:
+            if p.id in stoplist:
+                continue
+            if p.tvl is not None and p.tvl < min_tvl_usd:
+                continue
+            kept.append(p)
+
+        self.protocols: dict[str, Protocol] = {p.id: p for p in kept}
+        self._lookup: dict[str, str] = {}
+        for p in kept:
             candidates = [p.name, p.id, *p.aliases]
             for alias in candidates:
                 key = (alias or "").lower().strip()
-                if len(key) >= self.MIN_ALIAS_LEN:
+                if len(key) >= self.MIN_ALIAS_LEN and key not in stoplist:
                     self._lookup[key] = p.id
 
     def find(self, text: str) -> list[tuple[Protocol, int, str]]:

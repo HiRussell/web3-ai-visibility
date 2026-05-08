@@ -90,3 +90,51 @@ def test_canonical_case_insensitive(text, expected):
     idx = CanonicalIndex(protocols)
     hits = idx.find(text)
     assert [p.id for p, _, _ in hits] == expected
+
+
+def test_canonical_stoplist_drops_chain_slugs():
+    """DefiLlama lists chain TVL aggregations as 'protocols' (e.g. slug='ethereum').
+
+    These should not match user text — they're chains, not protocols.
+    """
+    protocols = [
+        Protocol(id="ethereum", name="Ethereum", aliases=[], tvl=1e12),
+        Protocol(id="lido", name="Lido", aliases=[], tvl=2e10),
+    ]
+    idx = CanonicalIndex(protocols)
+    hits = idx.find("Lido is the leading liquid staking on Ethereum.")
+    assert [p.id for p, _, _ in hits] == ["lido"]
+
+
+def test_canonical_stoplist_drops_english_word_slugs():
+    """English-word slugs like 'use', 'depth', 'market' produce false positives."""
+    protocols = [
+        Protocol(id="use", name="Use", aliases=[], tvl=1e9),
+        Protocol(id="market", name="Market", aliases=[], tvl=1e9),
+        Protocol(id="lido", name="Lido", aliases=[], tvl=1e9),
+    ]
+    idx = CanonicalIndex(protocols)
+    hits = idx.find("You should use Lido for liquid staking on the market.")
+    assert [p.id for p, _, _ in hits] == ["lido"]
+
+
+def test_canonical_min_tvl_filters_long_tail():
+    """Protocols below TVL floor are not loaded into the index."""
+    protocols = [
+        Protocol(id="real-protocol", name="Real Protocol", aliases=[], tvl=10e6),
+        Protocol(id="dead-protocol", name="DeadProtocol", aliases=[], tvl=100.0),
+    ]
+    idx = CanonicalIndex(protocols, min_tvl_usd=1_000_000.0)
+    assert "real-protocol" in idx.protocols
+    assert "dead-protocol" not in idx.protocols
+    hits = idx.find("Real Protocol is great. DeadProtocol exists.")
+    assert [p.id for p, _, _ in hits] == ["real-protocol"]
+
+
+def test_canonical_tvl_none_passes_through():
+    """When TVL is unknown (None), don't filter it out — only filter when TVL is below known floor."""
+    protocols = [
+        Protocol(id="unknown-tvl", name="UnknownTVL", aliases=[], tvl=None),
+    ]
+    idx = CanonicalIndex(protocols, min_tvl_usd=1_000_000.0)
+    assert "unknown-tvl" in idx.protocols
