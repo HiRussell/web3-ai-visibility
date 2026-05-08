@@ -27,3 +27,6 @@ dist/
 # Build artifacts
 *.egg-info/
 build/
+
+# Personal drafts / strategy notes — keep local only
+frontend/tweets.md
