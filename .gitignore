@@ -1,0 +1,29 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# DB is ephemeral (regenerated each cron run); only snapshot JSONs are committed
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/defillama_protocols.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend
+node_modules/
+.next/
+out/
+dist/
+
+# Build artifacts
+*.egg-info/
+build/

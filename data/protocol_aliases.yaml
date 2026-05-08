@@ -1,0 +1,69 @@
+# Hand-maintained alias list. Maps DefiLlama slug → list of additional aliases.
+#
+# Add an entry when you observe an LLM referring to a protocol by a name that
+# isn't its DefiLlama slug or display name (e.g. token tickers, brand
+# variations, version qualifiers).
+#
+# Rules of thumb:
+#   - Aliases must be unambiguous in context. Don't add "ape" for ApeCoin —
+#     too many false positives in normal text.
+#   - Aliases under 3 chars are dropped automatically (see CanonicalIndex.MIN_ALIAS_LEN).
+#   - When in doubt, add to .web3seo-dev/decisions.md and discuss before merging.
+
+uniswap:
+  - "uniswap labs"
+  - "uniswap protocol"
+
+uniswap-v3:
+  - "uni v3"
+
+uniswap-v4:
+  - "uni v4"
+
+aave-v3:
+  - "aave v3"
+  - "aave protocol"
+
+aave-v4:
+  - "aave v4"
+
+compound-finance:
+  - "compound v3"
+
+lido:
+  - "lido finance"
+  - "lido staking"
+
+rocket-pool:
+  - "rocketpool"
+
+curve-dex:
+  - "curve finance"
+
+makerdao:
+  - "maker"
+  - "maker dao"
+  - "sky protocol"  # 2024 rebrand; verify slug after DefiLlama refresh
+
+eigenlayer:
+  - "eigen layer"
+
+ethena:
+  - "ethena labs"
+
+hyperliquid:
+  - "hyperliquid dex"
+
+dydx:
+  - "dy/dx"
+  - "dy dx"
+
+morpho:
+  - "morpho blue"
+  - "morpho labs"
+
+pendle:
+  - "pendle finance"
+
+# Reminder: this list is intentionally short to start. Grow it from observed
+# misses in the LLM responses, not from speculation.

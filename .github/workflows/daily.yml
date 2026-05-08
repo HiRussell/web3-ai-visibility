@@ -1,0 +1,55 @@
+name: Daily scan
+
+on:
+  schedule:
+    - cron: "0 4 * * *"  # 04:00 UTC every day
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
+      - name: Sync deps
+        run: uv sync
+
+      - name: Refresh DefiLlama (best effort)
+        run: uv run python scripts/refresh_canonical.py
+        continue-on-error: true
+
+      - name: Determine run date
+        id: rundate
+        run: echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Run daily scan
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          DAILY_BUDGET_USD: "5.0"
+        run: uv run python scripts/run_daily.py --date ${{ steps.rundate.outputs.date }}
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Explicit file path — never use `git add -A` / `git add .`
+          git add "frontend/public/snapshots/${{ steps.rundate.outputs.date }}.json"
+          if git diff --staged --quiet; then
+            echo "No snapshot changes to commit."
+          else
+            git commit -m "Daily scan ${{ steps.rundate.outputs.date }}"
+            git push
+          fi
