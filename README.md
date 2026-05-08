@@ -7,13 +7,15 @@ Track which crypto protocols get mentioned by LLM search (Perplexity / ChatGPT /
 ## What this is
 
 A weekly cron job that:
-1. Runs ~50 hand-crafted crypto queries across 4 consumer-default AI search products
+1. Runs ~50 hand-crafted crypto queries across 4 AI search products
 2. Extracts which protocols get mentioned, against the DefiLlama canonical list
 3. Publishes a public leaderboard
 
-The 4 models tracked match each vendor's **current consumer default** — what an
-ordinary user actually sees. So the data measures real-world AI visibility, not
-the bleeding-edge research-tier models.
+Models tracked: Perplexity Sonar Pro, OpenAI GPT-4o (with web search), Grok 4.20
+(with live X data), and Gemini 2.0 Flash (with Google Search grounding). These are
+stable widely-deployed API tiers — a close proxy for what most users actually see.
+The newest consumer-default models (gpt-5.5, gemini-3-flash) will be added once
+wallet budget and provider stability support them.
 
 ## What this is NOT (v1)
 

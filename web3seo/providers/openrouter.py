@@ -196,14 +196,17 @@ DEFAULT_MODELS: list[OpenRouterModelConfig] = [
         input_usd_per_m=3.0,
         output_usd_per_m=15.0,
     ),
-    # ChatGPT consumer default since 2026-05-05 (was gpt-4o before).
-    # API name is gpt-5.5; "instant" is the consumer-product branding only.
+    # OpenAI gpt-4o — still widely deployed via API as of 2026-05.
+    # Note: ChatGPT consumer default flipped to gpt-5.5 on 2026-05-05; will
+    # consider switching once wallet budget supports gpt-5.5's $5/$30 per-M
+    # pricing. For now, gpt-4o gives a stable + affordable proxy for the
+    # ChatGPT family experience.
     OpenRouterModelConfig(
-        model="openai/gpt-5.5",
-        display_name="ChatGPT (GPT-5.5)",
+        model="openai/gpt-4o",
+        display_name="ChatGPT (GPT-4o)",
         has_native_search=False,
-        input_usd_per_m=5.0,
-        output_usd_per_m=30.0,
+        input_usd_per_m=2.5,
+        output_usd_per_m=10.0,
     ),
     # xAI flagship (released 2026-03-31). grok-2 was deprecated on OpenRouter.
     OpenRouterModelConfig(
@@ -213,14 +216,15 @@ DEFAULT_MODELS: list[OpenRouterModelConfig] = [
         input_usd_per_m=1.25,
         output_usd_per_m=2.50,
     ),
-    # Gemini consumer-app default. The OpenRouter slug carries `-preview`
-    # suffix even though it's what the consumer Gemini app serves. Replace
-    # with non-preview slug when Google promotes it out of preview.
+    # Gemini 2.0 Flash — stable, widely accessible. Note: Gemini consumer
+    # app default is now gemini-3-flash, but the preview slug on OpenRouter
+    # returned 403 on 67% of calls (see failures.md 2026-05-08). Sticking
+    # with 2.0 until 3.x is GA-stable on OpenRouter.
     OpenRouterModelConfig(
-        model="google/gemini-3-flash-preview",
-        display_name="Gemini 3 Flash",
+        model="google/gemini-2.0-flash-001",
+        display_name="Gemini 2.0 Flash",
         has_native_search=False,
-        input_usd_per_m=0.50,
-        output_usd_per_m=3.0,
+        input_usd_per_m=0.10,
+        output_usd_per_m=0.40,
     ),
 ]
