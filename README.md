@@ -6,15 +6,19 @@ Track which crypto protocols get mentioned by LLM search (Perplexity / ChatGPT /
 
 ## What this is
 
-A daily cron job that:
-1. Runs ~50 hand-crafted crypto queries across 4 LLM providers
+A weekly cron job that:
+1. Runs ~50 hand-crafted crypto queries across 4 consumer-default AI search products
 2. Extracts which protocols get mentioned, against the DefiLlama canonical list
 3. Publishes a public leaderboard
+
+The 4 models tracked match each vendor's **current consumer default** — what an
+ordinary user actually sees. So the data measures real-world AI visibility, not
+the bleeding-edge research-tier models.
 
 ## What this is NOT (v1)
 
 - A user system (no login, no accounts)
-- A real-time tool (daily scan)
+- A real-time tool (weekly scan)
 - A sentiment classifier (only mention frequency + raw context)
 - A B2B SaaS (this is a vibe-code side project)
 
@@ -22,9 +26,9 @@ A daily cron job that:
 
 - Python 3.11 + httpx
 - SQLite (idempotency-keyed storage)
-- **OpenRouter** as the single LLM gateway (one key drives Perplexity / GPT-4o / Grok / Gemini; D-010)
-- GitHub Actions cron (daily, 04:00 UTC)
-- Next.js + Tailwind on Vercel (static-generated leaderboard, separate frontend/)
+- **OpenRouter** as the single LLM gateway (one key drives Perplexity / GPT-5.5 / Grok / Gemini; D-010)
+- GitHub Actions cron (**weekly, Mondays 04:00 UTC** — daily was overkill)
+- Static HTML + Tailwind CDN on Vercel (separate frontend/)
 
 ## Principles (inherited from `corvus/CLAUDE.md`)
 

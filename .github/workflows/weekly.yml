@@ -1,8 +1,12 @@
-name: Daily scan
+name: Weekly scan
 
+# Runs every Monday at 04:00 UTC. Daily was overkill — LLM behaviours don't
+# meaningfully shift hour-by-hour, and weekly snapshots fit a "Weekly AI
+# Crypto Visibility Report" tweet rhythm better than a daily firehose.
+# Manual trigger via Actions tab is always available for ad-hoc runs.
 on:
   schedule:
-    - cron: "0 4 * * *"  # 04:00 UTC every day
+    - cron: "0 4 * * 1"  # Mondays 04:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -35,21 +39,29 @@ jobs:
         id: rundate
         run: echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
 
-      - name: Run daily scan
+      - name: Build queries.json for frontend
+        run: |
+          uv run python -c "
+          import yaml, json
+          json.dump(yaml.safe_load(open('data/queries.yaml')),
+                    open('frontend/public/queries.json', 'w'),
+                    indent=2, ensure_ascii=False)"
+
+      - name: Run weekly scan
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          DAILY_BUDGET_USD: "5.0"
+          DAILY_BUDGET_USD: "10.0"
         run: uv run python scripts/run_daily.py --date ${{ steps.rundate.outputs.date }}
 
-      - name: Commit snapshot
+      - name: Commit snapshot + queries
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Explicit file path — never use `git add -A` / `git add .`
-          git add "frontend/public/snapshots/${{ steps.rundate.outputs.date }}.json"
+          git add "frontend/public/snapshots/${{ steps.rundate.outputs.date }}.json" \
+                  "frontend/public/queries.json"
           if git diff --staged --quiet; then
             echo "No snapshot changes to commit."
           else
-            git commit -m "Daily scan ${{ steps.rundate.outputs.date }}"
+            git commit -m "Weekly scan ${{ steps.rundate.outputs.date }}"
             git push
           fi

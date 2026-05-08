@@ -180,15 +180,15 @@ class OpenRouterProvider(LLMProvider):
 
 
 # Catalog of models we track. Edit this list to add/remove targets.
-# Pricing as of 2026-05; update with provider changes (see D-009).
 #
-# TODO 2026-05-08: consumer defaults have moved on for OpenAI + Gemini:
-#   openai/gpt-4o          → openai/gpt-5.5-instant   (2026-05-05 default)
-#   google/gemini-2.0-flash → google/gemini-3-flash    (consumer app default)
-# Perplexity sonar-pro tracks the $20/mo Pro tier; could also add bare
-# `perplexity/sonar` to track the free-tier user experience.
-# Update slugs after verifying availability on https://openrouter.ai/models
+# Goal: track what consumer defaults each AI search product actually serves
+# (not the absolute SOTA). When a vendor flips their consumer default, update.
+#
+# Pricing verified 2026-05-08 against OpenRouter model pages. If a model
+# 404s or pricing breaks, see failures.md and update slug + cost together.
 DEFAULT_MODELS: list[OpenRouterModelConfig] = [
+    # Perplexity Pro tier default. (Free tier uses bare `perplexity/sonar`;
+    # could add as a 5th model later to track the free-user experience.)
     OpenRouterModelConfig(
         model="perplexity/sonar-pro",
         display_name="Perplexity Sonar Pro",
@@ -196,29 +196,31 @@ DEFAULT_MODELS: list[OpenRouterModelConfig] = [
         input_usd_per_m=3.0,
         output_usd_per_m=15.0,
     ),
+    # ChatGPT consumer default since 2026-05-05 (was gpt-4o before).
+    # API name is gpt-5.5; "instant" is the consumer-product branding only.
     OpenRouterModelConfig(
-        model="openai/gpt-4o",
-        display_name="ChatGPT (GPT-4o)",
+        model="openai/gpt-5.5",
+        display_name="ChatGPT (GPT-5.5)",
         has_native_search=False,
-        input_usd_per_m=2.5,
-        output_usd_per_m=10.0,
+        input_usd_per_m=5.0,
+        output_usd_per_m=30.0,
     ),
+    # xAI flagship (released 2026-03-31). grok-2 was deprecated on OpenRouter.
     OpenRouterModelConfig(
-        # x-ai/grok-2 was 404'd by OpenRouter on first real run 2026-05-08.
-        # Switched to grok-4.20 (released 2026-03-31, xAI's new flagship).
-        # Pricing 2026-05: $1.25/M in, $2.50/M out, 2M context.
-        # Verify on https://openrouter.ai/x-ai/grok-4.20 if pricing breaks again.
         model="x-ai/grok-4.20",
         display_name="Grok 4.20",
         has_native_search=False,
         input_usd_per_m=1.25,
         output_usd_per_m=2.50,
     ),
+    # Gemini consumer-app default. The OpenRouter slug carries `-preview`
+    # suffix even though it's what the consumer Gemini app serves. Replace
+    # with non-preview slug when Google promotes it out of preview.
     OpenRouterModelConfig(
-        model="google/gemini-2.0-flash-001",
-        display_name="Gemini 2.0 Flash",
+        model="google/gemini-3-flash-preview",
+        display_name="Gemini 3 Flash",
         has_native_search=False,
-        input_usd_per_m=0.10,
-        output_usd_per_m=0.40,
+        input_usd_per_m=0.50,
+        output_usd_per_m=3.0,
     ),
 ]

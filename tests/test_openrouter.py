@@ -223,10 +223,14 @@ def test_cost_estimate_matches_pricing():
 
 
 def test_default_models_catalog_sane():
-    """Sanity check that DEFAULT_MODELS has the four we care about and pricing > 0."""
+    """Sanity check: DEFAULT_MODELS covers each of the 4 vendors with sane pricing.
+
+    Slug-version-agnostic — vendors flip consumer defaults often (gpt-4o → gpt-5.5,
+    gemini-2.0-flash → gemini-3-flash, etc). Test the vendor coverage, not exact slugs.
+    """
     slugs = {m.model for m in DEFAULT_MODELS}
-    assert "perplexity/sonar-pro" in slugs
-    assert "openai/gpt-4o" in slugs
+    assert any(s.startswith("perplexity/") for s in slugs)
+    assert any(s.startswith("openai/") for s in slugs)
     assert any(s.startswith("x-ai/grok") for s in slugs)
     assert any(s.startswith("google/gemini") for s in slugs)
     for m in DEFAULT_MODELS:

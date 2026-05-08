@@ -24,14 +24,15 @@
     <header class="mb-16">
       <div class="flex items-center gap-2 text-emerald-400 text-sm font-medium uppercase tracking-wide mb-3">
         <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-        Live · updated daily
+        Live · updated weekly
       </div>
       <h1 class="text-5xl font-bold tracking-tight mb-4">
         What crypto protocols does <span class="text-emerald-400">AI</span> actually recommend?
       </h1>
       <p class="text-xl text-zinc-400 max-w-3xl mb-6">
-        Every day we run 50 hand-crafted crypto questions through Perplexity, ChatGPT, Grok, and Gemini —
-        then track which protocols and information sources they cite.
+        Each week we run 50 hand-crafted crypto questions through the consumer defaults of
+        Perplexity, ChatGPT, Grok, and Gemini — then track which protocols and information
+        sources they cite.
       </p>
       <div class="flex flex-wrap gap-4 text-sm text-zinc-500">
         <div>Last scan: <span id="run-date" class="text-zinc-300 font-mono">…</span></div>
@@ -146,38 +147,66 @@
       <h2 class="text-2xl font-bold mb-4 text-zinc-100">Methodology</h2>
       <ul class="space-y-2 list-disc pl-5">
         <li>50 hand-crafted crypto questions across categories: recommendations ("best DEX on Solana"), comparisons ("Aave vs Compound"), tactical ("how to leverage long ETH"), risk ("is Ethena safe"), and persona-realistic queries.</li>
-        <li>Each question runs through Perplexity Sonar Pro, OpenAI GPT-4o (with web search), Grok 4.20 (with live X data), and Gemini 2.0 Flash (with Google Search grounding) — via a single OpenRouter key.</li>
-        <li>Protocol mentions extracted with regex against the DefiLlama canonical protocol list (~7,400 entries), filtered to drop chain slugs and high-frequency English-word slugs (TVL &lt; $1M skipped).</li>
-        <li>Open source: <a class="underline text-emerald-400" href="https://github.com/HiRussell/web3-ai-visibility">github.com/HiRussell/web3-ai-visibility</a></li>
+        <li>Each question runs through 4 AI search products via a single OpenRouter key, using each vendor's <strong class="text-zinc-200">current consumer default</strong> — what an ordinary user actually sees, not the bleeding-edge research-tier model. The lineup rotates as consumer defaults change (e.g. ChatGPT default flipped from gpt-4o to gpt-5.5 on 2026-05-05).</li>
+        <li>Protocol mentions extracted with regex against the DefiLlama canonical protocol list (~7,400 entries), filtered to drop chain slugs and high-frequency English-word slugs (TVL &lt; $1M skipped). See <a class="underline text-emerald-400" href="https://github.com/HiRussell/web3-ai-visibility/blob/main/.web3seo-dev/failures.md">failures.md</a> for what false positives we've caught.</li>
+        <li>Open source: <a class="underline text-emerald-400" href="https://github.com/HiRussell/web3-ai-visibility">github.com/HiRussell/web3-ai-visibility</a> · weekly snapshots committed every Monday 04:00 UTC.</li>
       </ul>
     </section>
 
     <footer class="text-zinc-600 text-xs border-t border-zinc-900 pt-6">
-      Data updated daily at 04:00 UTC via GitHub Actions cron · Built as a vibe-code side project.
+      Data refreshed weekly (Mondays 04:00 UTC) via GitHub Actions · Built as a vibe-code side project.
     </footer>
 
   </div>
 
   <script>
-    // Latest snapshot. Replace this with a runs.json index when there's history.
+    // Latest snapshot. Replace with runs.json index when we have history.
     const LATEST = '2026-05-08';
 
-    const PROVIDER_KEYS = [
-      'perplexity/sonar-pro',
-      'openai/gpt-4o',
-      'x-ai/grok-4.20',
-      'google/gemini-2.0-flash-001',
+    // Map full provider slug → short column header. Header order = display order.
+    // Add a row here when DEFAULT_MODELS in openrouter.py changes; the page will
+    // automatically render new columns once the snapshot has data for them.
+    const PROVIDER_DISPLAY = [
+      ['perplexity/sonar-pro',          'perplexity'],
+      ['openai/gpt-5.5',                'gpt-5.5'],
+      ['openai/gpt-4o',                 'gpt-4o'],
+      ['x-ai/grok-4.20',                'grok-4'],
+      ['google/gemini-3-flash-preview', 'gemini-3'],
+      ['google/gemini-2.0-flash-001',   'gemini-2'],
     ];
 
     const fmt = (n) => n.toLocaleString();
 
+    function activeProviders(leaderboard) {
+      // Returns the subset of PROVIDER_DISPLAY whose slug appears anywhere
+      // in the snapshot data. Lets us show only columns that have data,
+      // and automatically pick up new models as snapshots evolve.
+      const seen = new Set();
+      leaderboard.forEach((p) => Object.keys(p.by_provider).forEach((k) => seen.add(k)));
+      return PROVIDER_DISPLAY.filter(([slug]) => seen.has(slug));
+    }
+
+    function renderProtocolHeader(active) {
+      const head = document.querySelector('#protocol-rows').closest('table').querySelector('thead tr');
+      const baseHtml = `
+        <th class="text-left py-2 font-medium w-8">#</th>
+        <th class="text-left py-2 font-medium">protocol</th>
+        <th class="text-right py-2 font-medium">total</th>`;
+      const dynamicHtml = active.map(([_, label]) =>
+        `<th class="text-right py-2 font-medium pl-4">${label}</th>`
+      ).join('');
+      head.innerHTML = baseHtml + dynamicHtml;
+    }
+
     function renderProtocolRows(leaderboard) {
+      const active = activeProviders(leaderboard);
+      renderProtocolHeader(active);
       const tbody = document.getElementById('protocol-rows');
       const rows = leaderboard.slice(0, 25);
       const max = Math.max(...rows.map((p) => p.total_mentions));
       tbody.innerHTML = rows.map((p, i) => {
-        const cells = PROVIDER_KEYS.map((k) => {
-          const v = p.by_provider[k] || 0;
+        const cells = active.map(([slug]) => {
+          const v = p.by_provider[slug] || 0;
           const pct = max > 0 ? Math.round((v / max) * 100) : 0;
           return `<td class="bar-cell text-right py-2 pl-4" style="--bar-pct:${pct}%"><span>${v}</span></td>`;
         }).join('');
