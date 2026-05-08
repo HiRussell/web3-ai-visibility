@@ -1,5 +1,7 @@
 # Web3 AI Visibility
 
+**Live**: https://web3-ai-visibility.vercel.app
+
 Track which crypto protocols get mentioned by LLM search (Perplexity / ChatGPT / Grok / Gemini) when users ask common Web3 questions.
 
 ## What this is

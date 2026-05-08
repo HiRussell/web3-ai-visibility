@@ -37,7 +37,8 @@ Numbers come from `frontend/public/snapshots/2026-05-08.json`.
 > 9. phemex       36
 > 10. bydfi       32
 >
-> full data: <link to repo>
+> full data + leaderboard:
+> https://web3-ai-visibility.vercel.app
 
 (Surprisingly few "real DeFi" names in top 10 — lots of CEX, lots of weird picks. Provocative.)
 
@@ -82,7 +83,8 @@ Numbers come from `frontend/public/snapshots/2026-05-08.json`.
 
 > this is a hobby project tracking how AI search recommends crypto.
 >
-> · open source: github.com/HiRussell/web3-ai-visibility
+> · live dashboard: web3-ai-visibility.vercel.app
+> · source: github.com/HiRussell/web3-ai-visibility
 > · runs daily at 04:00 UTC
 > · 50 queries × 4 AI models via @OpenRouterAI
 > · raw data committed to the repo every day
@@ -103,7 +105,8 @@ If posting as standalone tweets over a few days: start with **Tweet 3** alone as
 
 ## Pre-post checklist
 
-- [ ] Verify GitHub repo is public (currently private — `gh repo edit --visibility public`)
-- [ ] Add a screenshot of `frontend/public/index.html` rendered (open locally, screenshot the leaderboard table)
-- [ ] If posting tweet 3, decide whether to actually @-mention the journalism handles or leave them off
-- [ ] Once posted, monitor for: (a) protocol founders complaining their protocol got "wrong" data — useful signal; (b) journalists pushing back — also useful signal
+- [x] Site live: https://web3-ai-visibility.vercel.app
+- [ ] Verify GitHub repo is public (`gh repo edit --visibility public --accept-visibility-change-consequences`) — recommended so people can fork / file issues / read the methodology code
+- [ ] Open the live URL in a browser, screenshot the leaderboard table for tweet image
+- [ ] If posting tweet 3, decide whether to actually @-mention the journalism handles or leave them off (they will see it either way; @-mention drives more engagement at risk of more drama)
+- [ ] Once posted, monitor for: (a) protocol founders complaining their protocol got "wrong" data — useful signal; (b) journalists pushing back — also useful signal; (c) anyone offering to add new queries — engagement gold
