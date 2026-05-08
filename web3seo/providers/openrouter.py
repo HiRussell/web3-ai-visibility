@@ -181,6 +181,13 @@ class OpenRouterProvider(LLMProvider):
 
 # Catalog of models we track. Edit this list to add/remove targets.
 # Pricing as of 2026-05; update with provider changes (see D-009).
+#
+# TODO 2026-05-08: consumer defaults have moved on for OpenAI + Gemini:
+#   openai/gpt-4o          → openai/gpt-5.5-instant   (2026-05-05 default)
+#   google/gemini-2.0-flash → google/gemini-3-flash    (consumer app default)
+# Perplexity sonar-pro tracks the $20/mo Pro tier; could also add bare
+# `perplexity/sonar` to track the free-tier user experience.
+# Update slugs after verifying availability on https://openrouter.ai/models
 DEFAULT_MODELS: list[OpenRouterModelConfig] = [
     OpenRouterModelConfig(
         model="perplexity/sonar-pro",

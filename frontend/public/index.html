@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web3 AI Visibility Tracker</title>
+  <meta name="description" content="Which crypto protocols do AI search engines actually recommend? Daily leaderboard across Perplexity / ChatGPT / Grok / Gemini." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif; }
+    .bar-cell { position: relative; }
+    .bar-cell::before {
+      content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+      height: 70%; background: rgba(52, 211, 153, 0.18); border-radius: 2px;
+      width: var(--bar-pct, 0%); transition: width 0.3s ease;
+    }
+    .bar-cell > span { position: relative; z-index: 1; padding-left: 6px; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 antialiased">
+  <div class="max-w-6xl mx-auto px-6 py-12">
+
+    <!-- HERO -->
+    <header class="mb-16">
+      <div class="flex items-center gap-2 text-emerald-400 text-sm font-medium uppercase tracking-wide mb-3">
+        <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+        Live · updated daily
+      </div>
+      <h1 class="text-5xl font-bold tracking-tight mb-4">
+        What crypto protocols does <span class="text-emerald-400">AI</span> actually recommend?
+      </h1>
+      <p class="text-xl text-zinc-400 max-w-3xl mb-6">
+        Every day we run 50 hand-crafted crypto questions through Perplexity, ChatGPT, Grok, and Gemini —
+        then track which protocols and information sources they cite.
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm text-zinc-500">
+        <div>Last scan: <span id="run-date" class="text-zinc-300 font-mono">…</span></div>
+        <div>·</div>
+        <div><span id="meta-models" class="text-zinc-300 font-mono">…</span> models</div>
+        <div>·</div>
+        <div><span id="meta-mentions" class="text-zinc-300 font-mono">…</span> protocol mentions</div>
+        <div>·</div>
+        <div><span id="meta-hosts" class="text-zinc-300 font-mono">…</span> citation hosts</div>
+      </div>
+    </header>
+
+    <!-- KEY FINDING -->
+    <section class="mb-16 border-l-2 border-emerald-400 pl-6 py-2">
+      <p class="text-sm uppercase tracking-wide text-emerald-400 font-semibold mb-2">Headline finding</p>
+      <p class="text-2xl text-zinc-200 leading-relaxed">
+        <strong class="text-emerald-400">Lido</strong> is the only protocol all 4 AIs agree on
+        (top mention in every model). Everything else, they wildly disagree.
+      </p>
+    </section>
+
+    <!-- TOP PROTOCOLS -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold mb-2">Top protocols, cross-model</h2>
+      <p class="text-zinc-400 mb-6">Total mentions across 4 models. Each cell is a per-model count, with bar showing intensity.</p>
+      <div class="overflow-x-auto -mx-6 px-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="text-zinc-500 border-b border-zinc-800">
+              <th class="text-left py-2 font-medium w-8">#</th>
+              <th class="text-left py-2 font-medium">protocol</th>
+              <th class="text-right py-2 font-medium">total</th>
+              <th class="text-right py-2 font-medium pl-4">perplexity</th>
+              <th class="text-right py-2 font-medium pl-4">gpt-4o</th>
+              <th class="text-right py-2 font-medium pl-4">grok-4</th>
+              <th class="text-right py-2 font-medium pl-4">gemini</th>
+            </tr>
+          </thead>
+          <tbody id="protocol-rows" class="font-mono">
+            <tr><td colspan="7" class="text-center py-12 text-zinc-500">loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- MODEL PERSONALITIES -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold mb-2">Each model has a "personality"</h2>
+      <p class="text-zinc-400 mb-6">Same questions, very different protocol universes.</p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="border border-zinc-800 rounded-lg p-5">
+          <div class="text-emerald-400 font-semibold mb-1">Perplexity Sonar Pro</div>
+          <div class="text-zinc-400 text-sm mb-3">Conservative · TVL-anchored</div>
+          <div class="text-zinc-300 text-sm">Sticks to established protocols (Lido, KuCoin, Nexo, Symbiotic, Backpack). Returns clean citations.</div>
+        </div>
+        <div class="border border-zinc-800 rounded-lg p-5">
+          <div class="text-sky-400 font-semibold mb-1">ChatGPT (GPT-4o)</div>
+          <div class="text-zinc-400 text-sm mb-3">Median · balanced</div>
+          <div class="text-zinc-300 text-sm">Middle-of-road across categories. Less Lido-heavy than others. Closest to "industry consensus" view.</div>
+        </div>
+        <div class="border border-zinc-800 rounded-lg p-5">
+          <div class="text-orange-400 font-semibold mb-1">Grok 4.20</div>
+          <div class="text-zinc-400 text-sm mb-3">crypto-Twitter native</div>
+          <div class="text-zinc-300 text-sm">Pushes Monad (31 mentions, only behind Gemini) and 1inch hard. Reflects what's trending on X.</div>
+        </div>
+        <div class="border border-zinc-800 rounded-lg p-5">
+          <div class="text-purple-400 font-semibold mb-1">Gemini 2.0 Flash</div>
+          <div class="text-zinc-400 text-sm mb-3">Scattered · grounding-driven</div>
+          <div class="text-zinc-300 text-sm">Recommends obscure protocols nobody else mentions: DexTools 72×, bydfi 32×, alphagrowth 14×. Likely Google Search grounding pulling SEO-optimized but non-mainstream sites.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CITATION HOSTS -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold mb-2">What sources does AI trust for crypto?</h2>
+      <p class="text-zinc-400 mb-6">
+        Top hosts cited across all responses. Notable: <strong class="text-zinc-200">crypto journalism is mostly invisible</strong>.
+        DefiLlama dominates. CoinDesk only appears at #12 when all 4 models are combined.
+      </p>
+      <div class="overflow-x-auto -mx-6 px-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="text-zinc-500 border-b border-zinc-800">
+              <th class="text-left py-2 font-medium w-8">#</th>
+              <th class="text-left py-2 font-medium">host</th>
+              <th class="text-right py-2 font-medium">cited</th>
+            </tr>
+          </thead>
+          <tbody id="host-rows" class="font-mono">
+            <tr><td colspan="3" class="text-center py-12 text-zinc-500">loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- METHODOLOGY -->
+    <section class="mb-16 text-zinc-400 text-sm">
+      <h2 class="text-2xl font-bold mb-4 text-zinc-100">Methodology</h2>
+      <ul class="space-y-2 list-disc pl-5">
+        <li>50 hand-crafted crypto questions across categories: recommendations ("best DEX on Solana"), comparisons ("Aave vs Compound"), tactical ("how to leverage long ETH"), risk ("is Ethena safe"), and persona-realistic queries.</li>
+        <li>Each question runs through Perplexity Sonar Pro, OpenAI GPT-4o (with web search), Grok 4.20 (with live X data), and Gemini 2.0 Flash (with Google Search grounding) — via a single OpenRouter key.</li>
+        <li>Protocol mentions extracted with regex against the DefiLlama canonical protocol list (~7,400 entries), filtered to drop chain slugs and high-frequency English-word slugs (TVL &lt; $1M skipped).</li>
+        <li>Open source: <a class="underline text-emerald-400" href="https://github.com/HiRussell/web3-ai-visibility">github.com/HiRussell/web3-ai-visibility</a></li>
+      </ul>
+    </section>
+
+    <footer class="text-zinc-600 text-xs border-t border-zinc-900 pt-6">
+      Data updated daily at 04:00 UTC via GitHub Actions cron · Built as a vibe-code side project.
+    </footer>
+
+  </div>
+
+  <script>
+    // Latest snapshot. Replace this with a runs.json index when there's history.
+    const LATEST = '2026-05-08';
+
+    const PROVIDER_KEYS = [
+      'perplexity/sonar-pro',
+      'openai/gpt-4o',
+      'x-ai/grok-4.20',
+      'google/gemini-2.0-flash-001',
+    ];
+
+    const fmt = (n) => n.toLocaleString();
+
+    function renderProtocolRows(leaderboard) {
+      const tbody = document.getElementById('protocol-rows');
+      const rows = leaderboard.slice(0, 25);
+      const max = Math.max(...rows.map((p) => p.total_mentions));
+      tbody.innerHTML = rows.map((p, i) => {
+        const cells = PROVIDER_KEYS.map((k) => {
+          const v = p.by_provider[k] || 0;
+          const pct = max > 0 ? Math.round((v / max) * 100) : 0;
+          return `<td class="bar-cell text-right py-2 pl-4" style="--bar-pct:${pct}%"><span>${v}</span></td>`;
+        }).join('');
+        return `<tr class="border-b border-zinc-900 hover:bg-zinc-900/50">
+          <td class="py-2 text-zinc-500">${i + 1}</td>
+          <td class="py-2 text-zinc-200 truncate max-w-xs">${p.protocol_id}</td>
+          <td class="py-2 text-right text-emerald-400 font-semibold">${p.total_mentions}</td>
+          ${cells}
+        </tr>`;
+      }).join('');
+    }
+
+    function renderHostRows(hosts) {
+      const tbody = document.getElementById('host-rows');
+      const rows = hosts.slice(0, 30);
+      tbody.innerHTML = rows.map((h, i) =>
+        `<tr class="border-b border-zinc-900 hover:bg-zinc-900/50">
+          <td class="py-2 text-zinc-500">${i + 1}</td>
+          <td class="py-2 text-zinc-200">${h.host}</td>
+          <td class="py-2 text-right text-emerald-400 font-semibold">${h.count}</td>
+        </tr>`
+      ).join('');
+    }
+
+    fetch(`snapshots/${LATEST}.json`)
+      .then((r) => r.json())
+      .then((data) => {
+        document.getElementById('run-date').textContent = data.run_date;
+
+        const totalMentions = data.leaderboard.reduce((s, p) => s + p.total_mentions, 0);
+        const providersInData = new Set();
+        data.leaderboard.forEach((p) => Object.keys(p.by_provider).forEach((k) => providersInData.add(k)));
+        document.getElementById('meta-models').textContent = providersInData.size;
+        document.getElementById('meta-mentions').textContent = fmt(totalMentions);
+        document.getElementById('meta-hosts').textContent = fmt(data.top_citation_hosts.length);
+
+        renderProtocolRows(data.leaderboard);
+        renderHostRows(data.top_citation_hosts);
+      })
+      .catch((err) => {
+        document.body.innerHTML = `<pre class="p-8 text-red-400">Failed to load ${LATEST}.json: ${err.message}</pre>`;
+      });
+  </script>
+</body>
+</html>
