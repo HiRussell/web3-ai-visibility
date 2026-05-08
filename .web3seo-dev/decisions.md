@@ -139,6 +139,22 @@ When applying a principle from another project, ask "does the situation that mad
 the principle valuable in project X also exist here?" If not, the principle is
 decoration. Don't cite principles to skip thinking about the specific case.
 
+## D-011 (2026-05-08): Weekly cadence (Mondays), accept ~$24/month cost
+
+After first 4-model real run revealed per-scan cost is ~$6 (gpt-5.5 + search-plugin
+fees dominate), considered cutting to monthly ($6/month) or trimming `max_results`
+parameter (saves ~$1.25/scan). User chose to **stay on weekly** — reason: weekly
+fits a tweet-publishing rhythm, allows rotating queries to stay fresh, and $24/month
+is acceptable for the project's purpose (build crypto Twitter audience around fresh data).
+
+Trade-off accepted: ~$20/month more than the cheapest viable config. Bought:
+- Weekly tweet cadence vs monthly "report" cadence
+- Full citation richness (5 results per query, not 2)
+- Optionality to add more models later
+
+**Revisit if**: cost tolerance changes, or weekly data shows little protocol-mention
+variation week-over-week (in which case monthly cadence wouldn't lose signal).
+
 ## D-009 (2026-05-07): `cost_estimate()` on every Provider, pre-flight budget gate
 
 **Why**: defends against vendor pricing changes silently bankrupting a hobby project.

@@ -57,7 +57,9 @@ Plan:
 ## Later
 
 - C. **Frontend** (Next.js leaderboard + sparkline charts + sample-context drill-down)
-- D. Public deploy (Vercel) + first tweet
+- D. Public deploy (Vercel) + first tweet ✅ done 2026-05-08, live at https://web3-ai-visibility.vercel.app
 - E. Add Claude Sonnet 4.6 to DEFAULT_MODELS once we want broader coverage
 - F. Event-triggered scans (defer until cost/signal data justifies)
 - G. Citation-host leaderboard ("which crypto media does AI cite most?") as a separate weekly tweet hook
+- H. **Query rotation pool**: expand `data/queries.yaml` to ~80–100 queries, randomly sample 50 per week. Increases data diversity + surfaces protocols that wouldn't appear in a fixed seed set. Trade-off: harder to compare week-over-week (different queries → different mention counts). Maybe split: 30 fixed (for trend tracking) + 20 rotating (for diversity).
+- I. Cost optimization (deferred): max_results 5→2 in OpenRouter plugin config saves ~$1.25/scan. User opted to keep $24/month weekly cadence for now since cost is hobby-acceptable and citation richness matters more than $20/month savings.
