@@ -1,0 +1,254 @@
+{
+  "queries": [
+    {
+      "id": "rec_dex_eth",
+      "category": "recommendation",
+      "text": "What's the best DEX on Ethereum right now?"
+    },
+    {
+      "id": "rec_dex_solana",
+      "category": "recommendation",
+      "text": "What's the best DEX on Solana?"
+    },
+    {
+      "id": "rec_lending_eth",
+      "category": "recommendation",
+      "text": "What's the best lending protocol on Ethereum?"
+    },
+    {
+      "id": "rec_yield_aggregator",
+      "category": "recommendation",
+      "text": "What are the best yield aggregators in DeFi?"
+    },
+    {
+      "id": "rec_perp_dex",
+      "category": "recommendation",
+      "text": "What's the best perpetuals DEX in crypto?"
+    },
+    {
+      "id": "rec_prediction_market",
+      "category": "recommendation",
+      "text": "What are the best prediction markets in 2026?"
+    },
+    {
+      "id": "rec_lst_eth",
+      "category": "recommendation",
+      "text": "What's the best liquid staking token for ETH?"
+    },
+    {
+      "id": "rec_stablecoin",
+      "category": "recommendation",
+      "text": "Which stablecoin is the safest to hold in 2026?"
+    },
+    {
+      "id": "rec_l2_for_users",
+      "category": "recommendation",
+      "text": "Which Ethereum L2 should I use for everyday DeFi?"
+    },
+    {
+      "id": "rec_restaking",
+      "category": "recommendation",
+      "text": "What's the best restaking protocol on Ethereum?"
+    },
+    {
+      "id": "cmp_uniswap_curve",
+      "category": "comparison",
+      "text": "Uniswap vs Curve: which is better for stablecoin swaps?"
+    },
+    {
+      "id": "cmp_aave_compound",
+      "category": "comparison",
+      "text": "Aave vs Compound: which has more liquidity in 2026?"
+    },
+    {
+      "id": "cmp_lido_rocketpool",
+      "category": "comparison",
+      "text": "Lido vs Rocket Pool: which is safer for ETH staking?"
+    },
+    {
+      "id": "cmp_arbitrum_optimism",
+      "category": "comparison",
+      "text": "Arbitrum vs Optimism: which has more DeFi activity?"
+    },
+    {
+      "id": "cmp_solana_eth",
+      "category": "comparison",
+      "text": "Solana vs Ethereum: which is better for DeFi today?"
+    },
+    {
+      "id": "cmp_eigenlayer_symbiotic",
+      "category": "comparison",
+      "text": "EigenLayer vs Symbiotic: which restaking protocol is leading?"
+    },
+    {
+      "id": "cmp_hyperliquid_dydx",
+      "category": "comparison",
+      "text": "Hyperliquid vs dYdX: which perp DEX has more volume?"
+    },
+    {
+      "id": "tac_solana_yield",
+      "category": "tactical",
+      "text": "How do I get the best yield on my SOL?"
+    },
+    {
+      "id": "tac_eth_yield_low_risk",
+      "category": "tactical",
+      "text": "What's the safest way to earn yield on ETH?"
+    },
+    {
+      "id": "tac_stablecoin_yield",
+      "category": "tactical",
+      "text": "How do I get the highest yield on USDC right now?"
+    },
+    {
+      "id": "tac_leverage_long_eth",
+      "category": "tactical",
+      "text": "What's the cheapest way to leverage long ETH on-chain?"
+    },
+    {
+      "id": "tac_short_btc",
+      "category": "tactical",
+      "text": "What's the best way to short Bitcoin in DeFi?"
+    },
+    {
+      "id": "tac_bridge_to_arbitrum",
+      "category": "tactical",
+      "text": "What's the cheapest bridge to move USDC to Arbitrum?"
+    },
+    {
+      "id": "evt_recent_exploits",
+      "category": "recent",
+      "text": "What were the biggest DeFi exploits in the last 6 months?"
+    },
+    {
+      "id": "evt_recent_launches",
+      "category": "recent",
+      "text": "What new DeFi protocols launched in 2026 are worth watching?"
+    },
+    {
+      "id": "evt_trending_now",
+      "category": "recent",
+      "text": "What's trending in crypto right now?"
+    },
+    {
+      "id": "evt_recent_airdrops",
+      "category": "recent",
+      "text": "What are the most anticipated crypto airdrops in 2026?"
+    },
+    {
+      "id": "chain_berachain_dapps",
+      "category": "chain",
+      "text": "What are the top dApps on Berachain?"
+    },
+    {
+      "id": "chain_monad_protocols",
+      "category": "chain",
+      "text": "What protocols are launching on Monad?"
+    },
+    {
+      "id": "chain_base_defi",
+      "category": "chain",
+      "text": "What's the most active DeFi protocol on Base?"
+    },
+    {
+      "id": "chain_sui_dex",
+      "category": "chain",
+      "text": "What's the leading DEX on Sui?"
+    },
+    {
+      "id": "chain_ton_apps",
+      "category": "chain",
+      "text": "What are the most popular apps on TON?"
+    },
+    {
+      "id": "risk_ethena_safety",
+      "category": "risk",
+      "text": "Is Ethena USDe safe to hold?"
+    },
+    {
+      "id": "risk_restaking",
+      "category": "risk",
+      "text": "What are the risks of restaking with EigenLayer?"
+    },
+    {
+      "id": "risk_lst_depeg",
+      "category": "risk",
+      "text": "What's the risk of stETH depegging?"
+    },
+    {
+      "id": "risk_stablecoin_safest",
+      "category": "risk",
+      "text": "Which stablecoins are safest from depeg risk?"
+    },
+    {
+      "id": "risk_recent_audit_failures",
+      "category": "risk",
+      "text": "Which DeFi protocols have had recent audit issues or exploits?"
+    },
+    {
+      "id": "lt_low_fee_perp_arb",
+      "category": "longtail",
+      "text": "Which perp DEX has the lowest fees on Arbitrum?"
+    },
+    {
+      "id": "lt_high_apy_stable_safe",
+      "category": "longtail",
+      "text": "Where can I earn over 10% APY on stablecoins with low risk?"
+    },
+    {
+      "id": "lt_no_kyc_dex",
+      "category": "longtail",
+      "text": "What's the best non-custodial DEX with no KYC?"
+    },
+    {
+      "id": "lt_mev_protected_dex",
+      "category": "longtail",
+      "text": "Which DEXes have MEV protection?"
+    },
+    {
+      "id": "lt_btc_yield_native",
+      "category": "longtail",
+      "text": "How can I earn yield on native Bitcoin without wrapping it?"
+    },
+    {
+      "id": "cat_intent_protocols",
+      "category": "niche",
+      "text": "What are intent-based DeFi protocols and which are leading?"
+    },
+    {
+      "id": "cat_chain_abstraction",
+      "category": "niche",
+      "text": "Which chain abstraction protocols should I know about?"
+    },
+    {
+      "id": "cat_real_world_assets",
+      "category": "niche",
+      "text": "What are the top RWA (real world asset) protocols?"
+    },
+    {
+      "id": "cat_account_abstraction",
+      "category": "niche",
+      "text": "Which wallets and protocols use account abstraction well?"
+    },
+    {
+      "id": "cat_zk_apps",
+      "category": "niche",
+      "text": "What are the most exciting zk applications in 2026?"
+    },
+    {
+      "id": "persona_new_user",
+      "category": "persona",
+      "text": "I'm new to crypto and want to start earning yield safely with $1000. Where should I go?"
+    },
+    {
+      "id": "persona_eth_holder",
+      "category": "persona",
+      "text": "I have 5 ETH and want to earn yield without selling. What are my options?"
+    },
+    {
+      "id": "persona_degen",
+      "category": "persona",
+      "text": "I want to maximize my yield even with high risk. What should I look at?"
+    }
+  ]
+}

@@ -128,6 +128,19 @@
       </div>
     </section>
 
+    <!-- QUERIES -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold mb-2">The 50 questions we ask</h2>
+      <p class="text-zinc-400 mb-6">
+        Designed by inversion: pick query types most likely to expose AI failure modes —
+        incumbent bias, freshness gaps, coverage gaps, risk obfuscation, persona realism.
+        Got a question we should add? Open an issue or reply on twitter.
+      </p>
+      <div id="queries-by-category" class="space-y-6">
+        <p class="text-zinc-500">loading…</p>
+      </div>
+    </section>
+
     <!-- METHODOLOGY -->
     <section class="mb-16 text-zinc-400 text-sm">
       <h2 class="text-2xl font-bold mb-4 text-zinc-100">Methodology</h2>
@@ -188,6 +201,56 @@
         </tr>`
       ).join('');
     }
+
+    const CATEGORY_LABELS = {
+      recommendation: { label: 'Recommendation', desc: 'incumbent bias test' },
+      comparison:     { label: 'Comparison',      desc: 'factual accuracy on competitive pairs' },
+      tactical:       { label: 'Tactical',        desc: 'practical advice quality' },
+      recent:         { label: 'Recent events',   desc: 'freshness gap test' },
+      chain:          { label: 'Multi-chain',     desc: 'breadth of newer chain coverage' },
+      risk:           { label: 'Risk / safety',   desc: 'defensive instinct test' },
+      longtail:       { label: 'Long-tail',       desc: 'depth on specific filters' },
+      niche:          { label: 'Niche / category', desc: 'emerging vertical coverage' },
+      persona:        { label: 'Persona',         desc: 'how a real user phrases it' },
+    };
+
+    function escapeHtml(s) {
+      return s.replace(/[&<>"']/g, (c) => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+      }[c]));
+    }
+
+    function renderQueries(queriesData) {
+      const byCategory = {};
+      queriesData.queries.forEach((q) => {
+        (byCategory[q.category] = byCategory[q.category] || []).push(q);
+      });
+      const order = Object.keys(CATEGORY_LABELS).filter((c) => byCategory[c]);
+      const container = document.getElementById('queries-by-category');
+      container.innerHTML = order.map((cat) => {
+        const meta = CATEGORY_LABELS[cat] || { label: cat, desc: '' };
+        const qs = byCategory[cat];
+        return `
+          <div>
+            <div class="flex items-baseline gap-3 mb-2">
+              <h3 class="text-sm uppercase tracking-wide text-emerald-400 font-semibold">${meta.label}</h3>
+              <span class="text-zinc-600 text-xs">${qs.length} ·  ${meta.desc}</span>
+            </div>
+            <ul class="space-y-1 text-zinc-300 text-sm">
+              ${qs.map((q) => `<li class="flex"><span class="text-zinc-600 mr-2 select-none">›</span><span>${escapeHtml(q.text)}</span></li>`).join('')}
+            </ul>
+          </div>
+        `;
+      }).join('');
+    }
+
+    fetch('queries.json')
+      .then((r) => r.json())
+      .then(renderQueries)
+      .catch((err) => {
+        document.getElementById('queries-by-category').innerHTML =
+          `<p class="text-red-400">queries.json failed to load: ${err.message}</p>`;
+      });
 
     fetch(`snapshots/${LATEST}.json`)
       .then((r) => r.json())
