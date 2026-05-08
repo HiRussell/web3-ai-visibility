@@ -80,3 +80,23 @@ This is the **gemini-flash-lite lesson again** (Corvus D-039) — vendor model s
 **Notes**:
 - Other 3 models all worked end-to-end through the full pipeline. Idempotency + fail-soft worked: the 50 Grok errors didn't crash the run; the other 150 successful responses still flowed through extract + aggregate normally.
 - Errors table now has 50 stale `x-ai/grok-2` entries. Could prune them but they're useful as a record. Leave for now.
+
+---
+
+## 2026-05-08 — gpt-5.5 全部 402, gemini-3-flash-preview 67% 403
+
+**Symptom**: After updating DEFAULT_MODELS to consumer-default slugs (gpt-5.5 + gemini-3-flash-preview) and re-running, 50/50 gpt-5.5 returned 402 Payment Required, and 33/50 gemini-3-flash-preview returned 403 Forbidden (17 succeeded first, then the rest started failing).
+
+**Root cause**:
+- **gpt-5.5 402**: User's OpenRouter wallet didn't have enough credit for gpt-5.5's pricing ($5/M input, $30/M output) — significantly more expensive than gpt-4o. Credit ran out before any single call succeeded. This is a per-call cost gate on OpenRouter's side: if a request's max possible cost exceeds remaining wallet balance, request is rejected pre-flight.
+- **gemini-3-flash-preview 403**: Likely a per-model rate limit or preview-tier access cap kicking in after 17 calls. Could also be a content-policy gate triggered by certain queries (e.g. risk-related queries in our seed). Worth investigating; for now treat as flaky.
+
+**Fix (this incident)**:
+1. Deleted the 17 partial gemini-3-flash-preview responses + 116 mentions from DB, since incomplete-by-model data pollutes the cross-model leaderboard ("17 vs 50" looks like real divergence but isn't).
+2. Re-aggregated to clean 4-model snapshot (perplexity / gpt-4o / grok-4.20 / gemini-2.0). Site still meaningful; tweet copy uses this dataset.
+3. Did NOT roll back DEFAULT_MODELS — keeping gpt-5.5 / gemini-3-flash-preview slugs so the next budgeted scan (when user tops up wallet) auto-switches. Frontend `activeProviders()` already handles whichever providers have data.
+
+**Prevention**:
+1. Pre-flight budget gate (`scripts/run_daily.py:check_budget`) only checks against `DAILY_BUDGET_USD`, not OpenRouter wallet balance. Could query OpenRouter's `/credits` endpoint before scanning to abort early if wallet < estimate. **Deferred** until this fails twice (avoid premature optimization).
+2. For preview models like `gemini-3-flash-preview`, add a "first-run sanity check" that runs 5 queries and aborts if error rate > 50% — saves spending on a known-broken target. **Deferred**.
+3. Process: when adding a new expensive model, run 1-query test first to verify wallet has headroom AND model is accessible, before committing 50× spend.
