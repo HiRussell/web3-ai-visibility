@@ -63,6 +63,9 @@ class CanonicalIndex:
         "ramp", "yield", "stake", "staking", "lend", "lending", "borrow",
         "amber", "alpha", "beta", "gamma", "delta", "omega",
         "venture", "capital", "fund", "growth", "value",
+
+        # Round 2 (added 2026-05-08 after 50-query data showed these as FPs):
+        "stable", "status", "metric", "momentum", "flow",
     })
 
     def __init__(

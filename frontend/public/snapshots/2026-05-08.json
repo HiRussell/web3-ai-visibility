@@ -1,0 +1,1984 @@
+{
+  "run_date": "2026-05-08",
+  "leaderboard": [
+    {
+      "protocol_id": "lido",
+      "total_mentions": 40,
+      "by_provider": {
+        "perplexity/sonar-pro": 40
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_lst_eth",
+          "query": "What's the best liquid staking token for ETH?",
+          "matched_alias": "Lido",
+          "context": "r yields, trading, or lending. The \"best\" LST depends on your priorities: **market dominance and liquidity**, **security track record**, **APY**, **decentralization**, or **features like restaking**. Lido's stETH leads overwhelmingly, but alternatives exist. Data is from recent sources (e.g., DeFiLlama, CoinGecko, Staking Rewards as of search results).\n\n### Top ETH LSTs by Key Metrics\nHere's a compari"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_lst_eth",
+          "query": "What's the best liquid staking token for ETH?",
+          "matched_alias": "Lido",
+          "context": " (approx.) | Key Strengths | Key Risks/Downsides |\n|-------|----------|--------------|----------------------------------|-----------------------|---------------|---------------------|\n| **stETH** | **Lido** | ~69% (9.8M+ ETH staked) | $37B+ (largest by far) | 3-4% (rewards since 2020: $2.6B+) | Deepest liquidity, battle-tested since 2020, integrates everywhere (e.g., Curve, Aave). Best for most users."
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_lst_eth",
+          "query": "What's the best liquid staking token for ETH?",
+          "matched_alias": "Lido",
+          "context": "proven. |\n| Others (e.g., Rocket rETH, ether.fi eETH) | Various | <5% each | Smaller | 3-5% | More decentralized (Rocket), innovative features. | Lower liquidity, higher slippage. |\n\n**Sources**: [1] Lido dominance; [2] stETH >2/3 market; [3] 69.49% share, Swell APRs; [4-7] Rankings confirm Lido #1 by TVL/APY.\n\n### Recommendation: **stETH (Lido) is the Best Overall**\n- **Why?** It commands **69%+ mark"
+        }
+      ]
+    },
+    {
+      "protocol_id": "monad",
+      "total_mentions": 21,
+      "by_provider": {
+        "perplexity/sonar-pro": 21
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_monad_protocols",
+          "query": "What protocols are launching on Monad?",
+          "matched_alias": "Monad",
+          "context": "### Confirmed Protocols and Projects Launching or Live on Monad Mainnet\n\nBased on the latest available information from Monad's official announcements, guides, and ecosystem updates (as of early 2026), Monad's public mainnet (launched late 2025) already supports "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_monad_protocols",
+          "query": "What protocols are launching on Monad?",
+          "matched_alias": "Monad",
+          "context": "### Confirmed Protocols and Projects Launching or Live on Monad Mainnet\n\nBased on the latest available information from Monad's official announcements, guides, and ecosystem updates (as of early 2026), Monad's public mainnet (launched late 2025) already supports staking MON, asset bridging, and a range of DeFi, gaming, and "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_monad_protocols",
+          "query": "What protocols are launching on Monad?",
+          "matched_alias": "Monad",
+          "context": "# Confirmed Protocols and Projects Launching or Live on Monad Mainnet\n\nBased on the latest available information from Monad's official announcements, guides, and ecosystem updates (as of early 2026), Monad's public mainnet (launched late 2025) already supports staking MON, asset bridging, and a range of DeFi, gaming, and consumer apps. The focus is shifting to **deeper integrations** with blue-chip pro"
+        }
+      ]
+    },
+    {
+      "protocol_id": "rocket-pool",
+      "total_mentions": 21,
+      "by_provider": {
+        "perplexity/sonar-pro": 21
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_lst_eth",
+          "query": "What's the best liquid staking token for ETH?",
+          "matched_alias": "Rocket Pool",
+          "context": "by MEV and execution layer rewards post-Merge.\n- **How to get it**: Stake ETH on [lido.fi](https://lido.fi) → Receive stETH 1:1 (redeemable anytime).\n- **If not stETH**:\n  - **Max decentralization**: Rocket Pool (rETH)—node operators are permissionless.\n  - **Restaking yields**: Swell (rswETH) or ether.fi.\n  - **Beginner-friendly**: cbETH via Coinbase.\n  - Check live APY/TVL on [DefiLlama LST](https://defill"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_lido_rocketpool",
+          "query": "Lido vs Rocket Pool: which is safer for ETH staking?",
+          "matched_alias": "Rocket Pool",
+          "context": "### Lido vs. Rocket Pool: Which is Safer for ETH Staking?\n\nSafety in ETH staking via liquid staking protocols like Lido and Rocket Pool hinges on **decentralization** (reducing central points of failure or attack), **securit"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_lido_rocketpool",
+          "query": "Lido vs Rocket Pool: which is safer for ETH staking?",
+          "matched_alias": "Rocket Pool",
+          "context": "### Lido vs. Rocket Pool: Which is Safer for ETH Staking?\n\nSafety in ETH staking via liquid staking protocols like Lido and Rocket Pool hinges on **decentralization** (reducing central points of failure or attack), **security audits**, **validator diversity**, **economic risks**, and **protocol-specific vulnerabilities**. Both are ba"
+        }
+      ]
+    },
+    {
+      "protocol_id": "kucoin",
+      "total_mentions": 16,
+      "by_provider": {
+        "perplexity/sonar-pro": 16
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_restaking",
+          "query": "What's the best restaking protocol on Ethereum?",
+          "matched_alias": "KuCoin",
+          "context": "s the **first and largest restaking protocol** on Ethereum, with **TVL exceeding $13 billion** (source: [1] BeInCrypto's 2026 top picks). This dwarfs competitors like Etherfi's $2.8B TVL (source: [3] KuCoin).\n- Pioneered restaking by letting users restake ETH (or LSTs) to secure other protocols, earning extra rewards beyond standard staking (sources: [5] Figment, [9] Ethereum.org).\n- Dominant ecosystem:"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_restaking",
+          "query": "What's the best restaking protocol on Ethereum?",
+          "matched_alias": "KuCoin",
+          "context": "-----------|------------------------------|--------------------------|\n| **Etherfi** | Largest *liquid* restaking (ezETH token) | $2.8B+ TVL                        | Liquid tokens, ease of use  | [3] KuCoin              |\n| **Symbiotic** | Chain-agnostic, supports any ERC-20 collateral; customizable vaults/modules | Modular design, permissionless    | Flexibility, non-ETH assets | [2] ChainUp           "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_recent_airdrops",
+          "query": "What are the most anticipated crypto airdrops in 2026?",
+          "matched_alias": "KuCoin",
+          "context": "### Most Anticipated Crypto Airdrops in 2026\n\nBased on recent analyses from sources like NodeMaven, KuCoin, Bitcoin Foundation, DL News, and others (as of early May 2026), here are the most frequently mentioned and hyped potential airdrops. These are speculative—many are unconfirmed but backed by user act"
+        }
+      ]
+    },
+    {
+      "protocol_id": "nexo",
+      "total_mentions": 15,
+      "by_provider": {
+        "perplexity/sonar-pro": 15
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_lending_eth",
+          "query": "What's the best lending protocol on Ethereum?",
+          "matched_alias": "Nexo",
+          "context": "s consistently across multiple rankings of top DeFi lending protocols\n\n## Other Notable Options:\n\n- **Compound** - Another decentralized lending protocol frequently mentioned as a top alternative\n- **Nexo** - A centralized lending platform option (though not available in the US)\n\n## Key Consideration:\n\nYou have two main paths:\n1. **Decentralized protocols** (Aave, Compound) - more control, typically h"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_lending_eth",
+          "query": "What's the best lending protocol on Ethereum?",
+          "matched_alias": "Nexo",
+          "context": "Key Consideration:\n\nYou have two main paths:\n1. **Decentralized protocols** (Aave, Compound) - more control, typically higher yields but require more technical knowledge\n2. **Centralized platforms** (Nexo) - simpler interface but geographic restrictions apply\n\nFor the most comprehensive, up-to-date comparison of TVL, fees, and revenue across all Ethereum lending protocols, DefiLlama's monitoring tools"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_stablecoin_yield",
+          "query": "How do I get the highest yield on USDC right now?",
+          "matched_alias": "Nexo",
+          "context": "restRate #6] (18% confirmed) |\n| **Nebeus** | **12%** | Lending | None listed | Check terms | [Bitcompare #1] |\n| **YouHodler** | **11%** | Lending | None listed | Check terms | [Bitcompare #1] |\n| **Nexo** | **10.5%** (up to 14% per others) | Flexible (daily payouts) or Fixed-term (higher yield, e.g., 9.5%) | None / Up to 90 days | Yes, but verify tiers | [Bitcompare #1], [Nexo #2], [Mural #3] |\n| **"
+        }
+      ]
+    },
+    {
+      "protocol_id": "symbiotic",
+      "total_mentions": 13,
+      "by_provider": {
+        "perplexity/sonar-pro": 13
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_restaking",
+          "query": "What's the best restaking protocol on Ethereum?",
+          "matched_alias": "Symbiotic",
+          "context": "----------------|--------------------------|\n| **Etherfi** | Largest *liquid* restaking (ezETH token) | $2.8B+ TVL                        | Liquid tokens, ease of use  | [3] KuCoin              |\n| **Symbiotic** | Chain-agnostic, supports any ERC-20 collateral; customizable vaults/modules | Modular design, permissionless    | Flexibility, non-ETH assets | [2] ChainUp              |\n| **Renzo**   | Reliable"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_eigenlayer_symbiotic",
+          "query": "EigenLayer vs Symbiotic: which restaking protocol is leading?",
+          "matched_alias": "Symbiotic",
+          "context": "### EigenLayer vs Symbiotic: Current Market Leadership\n\n**EigenLayer is the clear leader** in the restaking space as of early 2026, primarily due to its **first-mover advantage, significantly higher TVL, and broader ecosystem a"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_eigenlayer_symbiotic",
+          "query": "EigenLayer vs Symbiotic: which restaking protocol is leading?",
+          "matched_alias": "Symbiotic",
+          "context": "arket Leadership\n\n**EigenLayer is the clear leader** in the restaking space as of early 2026, primarily due to its **first-mover advantage, significantly higher TVL, and broader ecosystem adoption**. Symbiotic, while innovative and gaining traction, trails in scale but excels in flexibility for specific use cases.\n\n#### Key Metrics Indicating Leadership (from Search Results)\n| Metric | EigenLayer | Symbiot"
+        }
+      ]
+    },
+    {
+      "protocol_id": "backpack",
+      "total_mentions": 11,
+      "by_provider": {
+        "perplexity/sonar-pro": 11
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_solana_yield",
+          "query": "How do I get the best yield on my SOL?",
+          "matched_alias": "Backpack",
+          "context": "ble—no long locks or platform hopping. Advanced users can push higher (5%+) with liquid staking or delta-neutral plays, but they add complexity and risk. Here's a breakdown based on current data from Backpack, Helius, and top protocols.\n\n#### 1. **Easiest & Most Reliable: Combined Staking + Lending (4-5% APY)**\n   - **Why it wins**: Earn staking rewards *while* lending idle SOL for extra yield. No need to"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_solana_yield",
+          "query": "How do I get the best yield on my SOL?",
+          "matched_alias": "Backpack",
+          "context": " Most Reliable: Combined Staking + Lending (4-5% APY)**\n   - **Why it wins**: Earn staking rewards *while* lending idle SOL for extra yield. No need to unstake or move funds.\n   - **Top Platform**: **Backpack** (integrated wallet/exchange).\n     | Strategy       | APY (Current) | Example (100 SOL) | Example (500 SOL) |\n     |----------------|---------------|-------------------|-------------------|\n     | "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_solana_yield",
+          "query": "How do I get the best yield on my SOL?",
+          "matched_alias": "Backpack",
+          "context": "ear   |\n     | Lending only  | ~0.7%        | ~0.7 SOL/year    | ~3.5 SOL/year    |\n     | **Combined**  | **~4.6%**    | **~4.6 SOL/year**| **~23 SOL/year** |\n   - **How to do it**:\n     1. Download Backpack wallet/app.\n     2. Deposit SOL.\n     3. Enable staking (auto-selects top validators).\n     4. Supply to lending pool (rates auto-adjust with demand).\n     5. Your SOL stays liquid for trading/perps "
+        }
+      ]
+    },
+    {
+      "protocol_id": "berachain",
+      "total_mentions": 7,
+      "by_provider": {
+        "perplexity/sonar-pro": 7
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_berachain_dapps",
+          "query": "What are the top dApps on Berachain?",
+          "matched_alias": "Berachain",
+          "context": "### Top dApps on Berachain\n\nBased on recent ecosystem analyses, TVL, trading volume, and adoption metrics, here are the standout dApps on Berachain mainnet. These are frequently highlighted across sources for their innovation,"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_berachain_dapps",
+          "query": "What are the top dApps on Berachain?",
+          "matched_alias": "Berachain",
+          "context": "### Top dApps on Berachain\n\nBased on recent ecosystem analyses, TVL, trading volume, and adoption metrics, here are the standout dApps on Berachain mainnet. These are frequently highlighted across sources for their innovation, liquidity, and user activity (e.g., Kodiak's $1B+ TVL and $500M+ volume, Infrared's dominance in staking). I've prioriti"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_berachain_dapps",
+          "query": "What are the top dApps on Berachain?",
+          "matched_alias": "Berachain",
+          "context": "------------------|-------------------|-------------------------------------------------------------------------------|---------------------------|---------|\n| **Kodiak Finance** | AMM/DEX          | Berachain-native DEX for token swaps; top platform by volume and fees (+42% weekly fee growth). | TVL: $1B+<br>Volume: $500M+ | [2]    |\n| **Infrared Finance** | Liquid Staking  | Tokenizes staked BERA/BGT; mo"
+        }
+      ]
+    },
+    {
+      "protocol_id": "hedera",
+      "total_mentions": 6,
+      "by_provider": {
+        "perplexity/sonar-pro": 6
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_account_abstraction",
+          "query": "Which wallets and protocols use account abstraction well?",
+          "matched_alias": "Hedera",
+          "context": "dence**: EIP-4337 abstracts fees/validation into smart contracts (Vitalik's roadmap); paymasters enable gasless/stablecoin payments (CoinTracker). Over 26M wallets prove adoption (ethereum.org).\n\n### Hedera (Protocol-Level Native AA)\nHedera implements **true protocol-level AA**, decoupling accounts from keys—no EIP-4337 workarounds needed. Supports native **m-of-n multisig**, key rotation, delegation, a"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_account_abstraction",
+          "query": "Which wallets and protocols use account abstraction well?",
+          "matched_alias": "Hedera",
+          "context": "alidation into smart contracts (Vitalik's roadmap); paymasters enable gasless/stablecoin payments (CoinTracker). Over 26M wallets prove adoption (ethereum.org).\n\n### Hedera (Protocol-Level Native AA)\nHedera implements **true protocol-level AA**, decoupling accounts from keys—no EIP-4337 workarounds needed. Supports native **m-of-n multisig**, key rotation, delegation, and third-party fees directly in th"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_account_abstraction",
+          "query": "Which wallets and protocols use account abstraction well?",
+          "matched_alias": "Hedera",
+          "context": " delegation, and third-party fees directly in the account model.\n\n**Wallets & Demos**:\n- **Multisig-account** and **multisig-sc-account**: Native demos for token transfers using keys/smart contracts (Hedera blog).\n- HashPack, Blade Wallet: Leverage Hedera's AA for seamless multisig/recovery without UserOps.\n\n**Evidence**: Unlike Ethereum's EOA limitations, Hedera's model natively handles AA properties ("
+        }
+      ]
+    },
+    {
+      "protocol_id": "maple",
+      "total_mentions": 5,
+      "by_provider": {
+        "perplexity/sonar-pro": 5
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_stablecoin_yield",
+          "query": "How do I get the highest yield on USDC right now?",
+          "matched_alias": "Maple",
+          "context": "eld, e.g., 9.5%) | None / Up to 90 days | Yes, but verify tiers | [Bitcompare #1], [Nexo #2], [Mural #3] |\n| **CoinDepo** | **17%** | Rewards | None listed | Check terms | [CoinInterestRate #6] |\n| **Maple Finance** | **Up to 23%** | Overcollateralized lending (via Syrup: 15%+ target) | Varies | Yes | [Mural #3] |\n| **OKX** | **9.13%** | Lending | None listed | Check terms | [Bitcompare #1] |\n| **Aave "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_stablecoin_yield",
+          "query": "How do I get the highest yield on USDC right now?",
+          "matched_alias": "Maple",
+          "context": "s (CeFi/DeFi mix).\n\n#### How to Get Started (Step-by-Step for Highest Yield)\n1. **Pick a Platform**: Start with **Lune.fi** for 29.5% potential. Alternatives: Nebeus/YouHodler for simplicity, or Nexo/Maple for established options. For DeFi, use Aave via a wallet like MetaMask.\n2. **Sign Up & Verify**: Create an account (KYC often required for CeFi). Check US eligibility—e.g., Nexo works for US but Mapl"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_stablecoin_yield",
+          "query": "How do I get the highest yield on USDC right now?",
+          "matched_alias": "Maple",
+          "context": "aple for established options. For DeFi, use Aave via a wallet like MetaMask.\n2. **Sign Up & Verify**: Create an account (KYC often required for CeFi). Check US eligibility—e.g., Nexo works for US but Maple/Syrup may have restrictions.\n3. **Deposit USDC**:\n   - Transfer USDC from your wallet/exchange (e.g., via ERC-20, Solana).\n   - Select \"Earn/Lend/Stake\" product (flexible for liquidity, fixed/locked "
+        }
+      ]
+    },
+    {
+      "protocol_id": "gate",
+      "total_mentions": 5,
+      "by_provider": {
+        "perplexity/sonar-pro": 5
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_ton_apps",
+          "query": "What are the most popular apps on TON?",
+          "matched_alias": "Gate",
+          "context": "on. Popularity is measured by user counts, daily actives, on-chain activity, and viral growth via Telegram. Below are the top ones based on search results from 2024-2026 sources (e.g., BingX, KuCoin, Gate.io, YouTube analyses).\n\n#### Top Games and Tap-to-Earn Mini-Apps\nThese dominate with hundreds of millions of users, leveraging simple \"tap-to-earn\" mechanics, airdrops, and social virality:\n\n| App/Ga"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_ton_apps",
+          "query": "What are the most popular apps on TON?",
+          "matched_alias": "Gate",
+          "context": "26 Context**: Retention leaders like Catizen/Major show shift from pure hype to sustainable engagement.\n\nFor real-time stats, check TON explorers or Telegram bots. Sources: BingX (2026 top 7), KuCoin/Gate.io dApp lists, PlayToEarn YouTube rankings."
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "persona_eth_holder",
+          "query": "I have 5 ETH and want to earn yield without selling. What are my options?",
+          "matched_alias": "Gate",
+          "context": "s |\n   | **Compound** | 3-7% | Similar to Aave | Reliable, governance via COMP | Slightly lower liquidity |\n\n   **Why?** Aave supports ~20 assets including ETH; yields from borrower demand. Evidence: Gate.com and AirdropAlert rank it #1 for ETH lending.\n\n#### 2. **Liquidity Provision (Higher Yield, Some IL Risk)**\n   Add ETH to pools (e.g., ETH/USDC) and earn trading fees + rewards.\n   | Platform | Es"
+        }
+      ]
+    },
+    {
+      "protocol_id": "tether",
+      "total_mentions": 5,
+      "by_provider": {
+        "perplexity/sonar-pro": 5
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_stablecoin",
+          "query": "Which stablecoin is the safest to hold in 2026?",
+          "matched_alias": "Tether",
+          "context": "ved with daily reports) |\n| **GUSD** | Monthly audits, U.S. bank reserves | Lower liquidity |\n| **TUSD** | Real-time attestations | Relies on partner banks |\n\n### Comparison to Alternatives\n- **USDT (Tether)** dominates in liquidity and trading volume (e.g., #1 in ChainUp, Bitrue), but trails USDC in transparency and regulation—making it better for high-frequency trading than pure safety.\n- Niche option"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_recent_launches",
+          "query": "What new DeFi protocols launched in 2026 are worth watching?",
+          "matched_alias": "Tether",
+          "context": "); scales like TradFi. | Top RWA/DeFi (Source [3]) | \"Shifting DeFi toward credit-based systems.\" |\n\n### 2026 Trends Signaling Potential New Launches (No Specific Names)\n- **Stablecoin Innovations**: Tether's **USDT0** (omnichain stablecoin) and Circle's Cross-Chain Transfer Protocol—recent but not full \"protocols.\" Watch for unified liquidity layers from issuers.\n- **Privacy Protocols**: Railgun and Ca"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_recent_audit_failures",
+          "query": "Which DeFi protocols have had recent audit issues or exploits?",
+          "matched_alias": "Tether",
+          "context": "d $232M to USDC and moved it across chains\n- Highlights issue: Even with visible fund flows and real-time monitoring, frozen assets weren't recovered\n- Transitioning settlement from USDC to USDT with Tether's recovery support\n\n## **Kelp DAO** (~$71M Frozen)\n- Exploited; Arbitrum Security Council froze $71M in stolen ETH on April 21, 2026\n- Isolated market structure prevented contagion spread\n\n## **Mango"
+        }
+      ]
+    },
+    {
+      "protocol_id": "beefy",
+      "total_mentions": 5,
+      "by_provider": {
+        "perplexity/sonar-pro": 5
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Beefy",
+          "context": "vating vault strategies since early 2020. Best for advanced farmers seeking sophisticated strategies.\n\n2. **Convex Finance** – A CRV token boosting protocol that optimizes Curve Finance yields.\n\n3. **Beefy Finance** – A multi-chain yield optimizer that removes the hassle of daily harvests. Excellent for set-it-and-forget-it investors.\n\n4. **Harvest Finance** – An automated yield maximizer that farms th"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Beefy",
+          "context": "ce** – Offers versatile yield aggregation for passive income streams.\n\n7. **Kamino Finance** – Specializes in capital-efficient DeFi liquidity management.\n\n## Key Considerations\n\n- **For beginners**: Beefy Finance and Idle Finance offer simple, automated solutions\n- **For advanced users**: Yearn Finance and Harvest Finance provide more sophisticated strategies\n- **Multi-chain coverage**: Beefy Finance "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Beefy",
+          "context": "nners**: Beefy Finance and Idle Finance offer simple, automated solutions\n- **For advanced users**: Yearn Finance and Harvest Finance provide more sophisticated strategies\n- **Multi-chain coverage**: Beefy Finance operates across multiple blockchains\n\nMost yield aggregators handle auto-compounding and optimization automatically, removing the need for constant manual management. Choose based on your ris"
+        }
+      ]
+    },
+    {
+      "protocol_id": "enso",
+      "total_mentions": 4,
+      "by_provider": {
+        "perplexity/sonar-pro": 4
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_chain_abstraction",
+          "query": "Which chain abstraction protocols should I know about?",
+          "matched_alias": "Enso",
+          "context": "pp (UniversalX). |\n| **Newton** (@MagicNewton) | Simplifies user/app/liquidity access; integrated with Polygon's AggLayer for multi-chain ecosystem. | Polygon-focused; joint Magic Labs/Polygon. |\n| **Enso** (@EnsoBuild) | Intent-based; Cosmos SDK L1; abstracts smart contract interactions for devs (one source for all chains). Stores execution data per contract. | Testnet; no mainnet product yet. |\n| **"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_chain_abstraction",
+          "query": "Which chain abstraction protocols should I know about?",
+          "matched_alias": "Enso",
+          "context": "AI agents as a universal settlement layer. Supports non-smart contract chains. |\n\n#### Foundational Tech Components (Enablers, Not Standalone Protocols)\nThese underpin many protocols (e.g., Particle, Enso):\n- **Cosmos IBC**: Secure cross-chain data/asset transfers via light clients, relayers, packets. Trust-minimized interoperability.\n- **ZK Proofs** (e.g., zk-SNARKs): Privacy/security for cross-chain"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_chain_abstraction",
+          "query": "Which chain abstraction protocols should I know about?",
+          "matched_alias": "Enso",
+          "context": "ealing data.\n- **Data Availability Layers**: Redundancy, erasure coding, Merkle trees for resilient multi-chain data.\n\n#### Market Context & Trends (2026)\n- **Top by Popularity**: Particle > Newton > Enso > Tria > INFINIT (per Binance Square review of 12 pre-TGE projects).\n- **Ecosystem Support**: Most handle major EVM chains (Eth, Arbitrum); expanding to Solana/Cosmos. No bridging needed—intents/agen"
+        }
+      ]
+    },
+    {
+      "protocol_id": "wbtc",
+      "total_mentions": 4,
+      "by_provider": {
+        "perplexity/sonar-pro": 4
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_uniswap_curve",
+          "query": "Uniswap vs Curve: which is better for stablecoin swaps?",
+          "matched_alias": "WBTC",
+          "context": "eFi: whales, institutions, protocols swap stables/LSTs efficiently. 3CRV pool (USDC/DAI/USDT) exemplifies dominance. [1][3] | Front door for retail/volatile tokens (e.g., ETH to new tokens). ~90% ETH/WBTC share, but encroaching on stables. [1][3][5] | Curve |\n| **LP Experience** | Passive (\"lazy\") provision with fungibility; lower impermanent loss risk for stables. Resists JIT attacks. [3] | Active ma"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_eigenlayer_symbiotic",
+          "query": "EigenLayer vs Symbiotic: which restaking protocol is leading?",
+          "matched_alias": "wBTC",
+          "context": "t \"much higher TVL\"; Symbiotic started accepting collateral later. |\n| **Asset Support** | ETH-focused (e.g., staked ETH like cbETH, stETH); expanded to ERC-20s | Multi-asset from start (ERC-20s like wBTC, LP tokens); ETH restaking incoming | [2][3][5]: EigenLayer adopted multi-asset post-Symbiotic launch; Symbiotic's modularity enables broader collateral. |\n| **Ecosystem Maturity** | Evolved into \"ve"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "lt_btc_yield_native",
+          "query": "How can I earn yield on native Bitcoin without wrapping it?",
+          "matched_alias": "WBTC",
+          "context": "n't be used in smart contract-based DeFi like lending or staking on chains like Ethereum or Starknet because Bitcoin's base layer lacks smart contracts. Most yield options require **wrapping** (e.g., WBTC, tBTC) or **bridging** to sidechains/L2s (e.g., Rootstock's RBTC). However, a few methods claim to generate yield **without wrapping or bridging**, primarily through **timelocking** or custodial serv"
+        }
+      ]
+    },
+    {
+      "protocol_id": "uniswap-v3",
+      "total_mentions": 4,
+      "by_provider": {
+        "perplexity/sonar-pro": 4
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_uniswap_curve",
+          "query": "Uniswap vs Curve: which is better for stablecoin swaps?",
+          "matched_alias": "Uniswap v3",
+          "context": "] | Curve |\n| **Slippage & Efficiency** | Extremely low slippage for large stablecoin swaps (e.g., millions in USDC-USDT); \"unrivaled king\" for stables. Tricrypto pool often quoted better prices than Uniswap v3. Median value forfeited by choosing Uniswap: $6.22/trade. [1][3] | Improved for stables via low-fee tiers, but higher slippage on big volumes vs. Curve. Stealing some share post-v3, but not dominant."
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_uniswap_curve",
+          "query": "Uniswap vs Curve: which is better for stablecoin swaps?",
+          "matched_alias": "Uniswap v3",
+          "context": "loss risk for stables. Resists JIT attacks. [3] | Active management required; higher IL risk if prices shift. [1][3] | Curve (for stables) |\n| **Market Share Trends** | Lost some stablecoin volume to Uniswap v3's low fees, but retains edge for high-volume/low-slippage needs. Past exploits (e.g., 2023) caused temporary outflows to Uniswap. [3][4][5] | Gaining stablecoin fees since v3 (no fees on some stable "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_uniswap_curve",
+          "query": "Uniswap vs Curve: which is better for stablecoin swaps?",
+          "matched_alias": "Uniswap v3",
+          "context": "mporary outflows to Uniswap. [3][4][5] | Gaining stablecoin fees since v3 (no fees on some stable pairs), but not optimized like Curve. [3][5] | Curve (specialization trumps) |\n\n#### Why Not Uniswap?\nUniswap v3 competes well for smaller retail stable swaps (via 1-5 bps fees + concentration), holding ~90% overall DEX volume on ETH. However, for **core stablecoin use cases**—low-slippage, high-volume trades—C"
+        }
+      ]
+    },
+    {
+      "protocol_id": "bybit",
+      "total_mentions": 4,
+      "by_provider": {
+        "perplexity/sonar-pro": 4
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_recent_exploits",
+          "query": "What were the biggest DeFi exploits in the last 6 months?",
+          "matched_alias": "Bybit",
+          "context": "nd $635M stolen**—the highest monthly tally ever recorded. This surpasses previous peaks like August 2021, March 2022, October 2022, and even February 2025 (when North Korean hackers stole $1.5B from Bybit, though that was a CEX, not pure DeFi). Cumulative DeFi hacks have now exceeded **$6.72B** historically.\n\nNo other months in the last 6 are detailed with comparable aggregate data, but April's events"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_ethena_safety",
+          "query": "Is Ethena USDe safe to hold?",
+          "matched_alias": "Bybit",
+          "context": "Mitigations\n- **Diversified Backing and Hedging**: USDe is backed ~50% by BTC, 30% by ETH, 11% by ETH LSTs, and 8% by USDT (per Ethena's site). Shorts are spread across 5+ exchanges (48% Binance, 23% Bybit, 20% OKX, etc.) to avoid single-point failures. This held up during events like the Bybit hack and October 2023 flash crash (CoinMetrics analysis).\n- **Reserve Fund for Negative Funding**: Yield reli"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_ethena_safety",
+          "query": "Is Ethena USDe safe to hold?",
+          "matched_alias": "Bybit",
+          "context": " 11% by ETH LSTs, and 8% by USDT (per Ethena's site). Shorts are spread across 5+ exchanges (48% Binance, 23% Bybit, 20% OKX, etc.) to avoid single-point failures. This held up during events like the Bybit hack and October 2023 flash crash (CoinMetrics analysis).\n- **Reserve Fund for Negative Funding**: Yield relies on positive funding rates (perps payers). In downturns (negative rates), Ethena covers "
+        }
+      ]
+    },
+    {
+      "protocol_id": "sushiswap",
+      "total_mentions": 4,
+      "by_provider": {
+        "perplexity/sonar-pro": 4
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_dex_eth",
+          "query": "What's the best DEX on Ethereum right now?",
+          "matched_alias": "SushiSwap",
+          "context": "r May 2026 [2] and MEXC's April list [4] rank it at the top.\n- Other lists like CrypticWeb3 [7] and Alchemy [5] affirm its Ethereum leadership.\n\nEthereum-specific alternatives like older forks (e.g., SushiSwap) trail far behind in volume and liquidity per DefiLlama metrics. For Ethereum L1/L2 trading, Uniswap offers the deepest pools, best prices, and most reliable execution—ideal unless you need specializ"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_l2_for_users",
+          "query": "Which Ethereum L2 should I use for everyday DeFi?",
+          "matched_alias": "SushiSwap",
+          "context": "## Why Arbitrum?\n- **Top DeFi Depth and Liquidity**: It leads with the highest Total Value Locked (TVL) among L2s—over $17-19B as of mid-2025 data—hosting major protocols like Uniswap, Aave, GMX, and SushiSwap. This means better liquidity for swaps, lending, borrowing, and trading without deep slippage (sources: [1], [5], [6]).\n- **Mature Ecosystem for Daily Use**: Stage 1 rollup with optimistic proofs (Bo"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "persona_eth_holder",
+          "query": "I have 5 ETH and want to earn yield without selling. What are my options?",
+          "matched_alias": "SushiSwap",
+          "context": "-------|----------------------|--------------|------|------|\n   | **Uniswap V3** | 5-15% | Provide ETH + pair token → Earn fees | High volume, concentrated liquidity | IL if ETH price swings |\n   | **SushiSwap** | 6-20% | Similar, + SUSHI rewards | 1,000+ pairs, low fees | Fork of Uniswap (still solid) |\n\n   **Why?** Uniswap/SushiSwap lead ETH pools per Binance Square and Gate.com; safe due to audits.\n\n###"
+        }
+      ]
+    },
+    {
+      "protocol_id": "idle",
+      "total_mentions": 4,
+      "by_provider": {
+        "perplexity/sonar-pro": 4
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Idle",
+          "context": "harvests. Excellent for set-it-and-forget-it investors.\n\n4. **Harvest Finance** – An automated yield maximizer that farms the highest yields from new DeFi protocols using the latest techniques.\n\n5. **Idle Finance** – Perfect for passive investors seeking a \"set and forget\" approach to yield generation.\n\n6. **Vesper Finance** – Offers versatile yield aggregation for passive income streams.\n\n7. **Kamino"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Idle",
+          "context": "atile yield aggregation for passive income streams.\n\n7. **Kamino Finance** – Specializes in capital-efficient DeFi liquidity management.\n\n## Key Considerations\n\n- **For beginners**: Beefy Finance and Idle Finance offer simple, automated solutions\n- **For advanced users**: Yearn Finance and Harvest Finance provide more sophisticated strategies\n- **Multi-chain coverage**: Beefy Finance operates across m"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_solana_yield",
+          "query": "How do I get the best yield on my SOL?",
+          "matched_alias": "idle",
+          "context": " based on current data from Backpack, Helius, and top protocols.\n\n#### 1. **Easiest & Most Reliable: Combined Staking + Lending (4-5% APY)**\n   - **Why it wins**: Earn staking rewards *while* lending idle SOL for extra yield. No need to unstake or move funds.\n   - **Top Platform**: **Backpack** (integrated wallet/exchange).\n     | Strategy       | APY (Current) | Example (100 SOL) | Example (500 SOL) "
+        }
+      ]
+    },
+    {
+      "protocol_id": "universalx",
+      "total_mentions": 3,
+      "by_provider": {
+        "perplexity/sonar-pro": 3
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_chain_abstraction",
+          "query": "Which chain abstraction protocols should I know about?",
+          "matched_alias": "UniversalX",
+          "context": " Notes |\n|----------|--------------|---------------|\n| **Particle Network** (@ParticleNtwrk) | Universal Account aggregates balances/gas across chains; L1 intermediary for liquidity. Powers apps like UniversalX for CEX-like on-chain trading. | Most influential; 5 funding rounds; live app (UniversalX). |\n| **Newton** (@MagicNewton) | Simplifies user/app/liquidity access; integrated with Polygon's AggLayer fo"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_chain_abstraction",
+          "query": "Which chain abstraction protocols should I know about?",
+          "matched_alias": "UniversalX",
+          "context": "k) | Universal Account aggregates balances/gas across chains; L1 intermediary for liquidity. Powers apps like UniversalX for CEX-like on-chain trading. | Most influential; 5 funding rounds; live app (UniversalX). |\n| **Newton** (@MagicNewton) | Simplifies user/app/liquidity access; integrated with Polygon's AggLayer for multi-chain ecosystem. | Polygon-focused; joint Magic Labs/Polygon. |\n| **Enso** (@EnsoB"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_chain_abstraction",
+          "query": "Which chain abstraction protocols should I know about?",
+          "matched_alias": "UniversalX",
+          "context": "n/Arbitrum hubs. Check CoinGecko's Chain Abstraction category for market caps/tokens.\n- **Risks**: Many testnet-only; focus on audited liquidity and sequencer decentralization.\n\nStart with Particle's UniversalX for hands-on experience. For devs, explore NEAR Intents or Enso docs. Track @handles for updates—the narrative is shifting from theory to apps."
+        }
+      ]
+    },
+    {
+      "protocol_id": "bingx",
+      "total_mentions": 3,
+      "by_provider": {
+        "perplexity/sonar-pro": 3
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_ton_apps",
+          "query": "What are the most popular apps on TON?",
+          "matched_alias": "BingX",
+          "context": " massive adoption. Popularity is measured by user counts, daily actives, on-chain activity, and viral growth via Telegram. Below are the top ones based on search results from 2024-2026 sources (e.g., BingX, KuCoin, Gate.io, YouTube analyses).\n\n#### Top Games and Tap-to-Earn Mini-Apps\nThese dominate with hundreds of millions of users, leveraging simple \"tap-to-earn\" mechanics, airdrops, and social viral"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_ton_apps",
+          "query": "What are the most popular apps on TON?",
+          "matched_alias": "BingX",
+          "context": "TON.fi integration).\n- **2026 Context**: Retention leaders like Catizen/Major show shift from pure hype to sustainable engagement.\n\nFor real-time stats, check TON explorers or Telegram bots. Sources: BingX (2026 top 7), KuCoin/Gate.io dApp lists, PlayToEarn YouTube rankings."
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_zk_apps",
+          "query": "What are the most exciting zk applications in 2026?",
+          "matched_alias": "BingX",
+          "context": "ng Ethereum gas fees by up to 99%, enabling 2,000+ TPS, and unlocking real-world use cases like shielded transactions and lightweight verification. Drawing from top analyses (CoinCodex, zkrollups.io, BingX, Binance Square), here are the **most exciting ZK applications**, ranked by traction (TVL, adoption, innovation). I've focused on live projects with mainnet upgrades, high throughput, and ecosystem g"
+        }
+      ]
+    },
+    {
+      "protocol_id": "railgun",
+      "total_mentions": 3,
+      "by_provider": {
+        "perplexity/sonar-pro": 3
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_recent_launches",
+          "query": "What new DeFi protocols launched in 2026 are worth watching?",
+          "matched_alias": "Railgun",
+          "context": "ions**: Tether's **USDT0** (omnichain stablecoin) and Circle's Cross-Chain Transfer Protocol—recent but not full \"protocols.\" Watch for unified liquidity layers from issuers.\n- **Privacy Protocols**: Railgun and Canton Network push privacy for institutions; Ethereum may launch native privacy in 2026, spawning new tools.\n- **Appchains & Fintech Chains**: DeFi protocols and firms (e.g., Stripe's Tempo) lau"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_zk_apps",
+          "query": "What are the most exciting zk applications in 2026?",
+          "matched_alias": "Railgun",
+          "context": "bility for shielded payments. | Proven real usage, not just hype. |\n   | **Aztec Network** | Privacy-first zk-rollup; Noir language for encrypted DeFi/smart contracts. | Private DeFi leader. |\n   | **Railgun / Lexie Crypto** | Shielded DeFi transactions; privacy for AMMs/NFTs. | Emerging for institutional shielded pools. |\n   | **Aleph Zero (AZERO)** | Confidential apps with ZK privacy infrastructure. | "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_zk_apps",
+          "query": "What are the most exciting zk applications in 2026?",
+          "matched_alias": "Railgun",
+          "context": "Snapshot (2026)**: ZK sector at $11.7B market cap, $3.5B 24h volume. zkSync, Starknet, and Polygon lead TVL dominance. Expect ZK to underpin 50%+ of Ethereum L2 activity, with privacy apps like Aztec/Railgun exploding in regulated DeFi.\n\nThese apps aren't theoretical— they're live, with billions in TVL and millions of txns monthly. For devs, tools like Noir/Cairo make building seamless; for users, it's c"
+        }
+      ]
+    },
+    {
+      "protocol_id": "superchain",
+      "total_mentions": 3,
+      "by_provider": {
+        "perplexity/sonar-pro": 3
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_l2_for_users",
+          "query": "Which Ethereum L2 should I use for everyday DeFi?",
+          "matched_alias": "Superchain",
+          "context": "txns     | Broader focus, not DeFi-dominant               | $1B+ TVL                     |\n| **Optimism**| Ethereum compatibility             | Less liquidity gravity than Arbitrum           | Strong Superchain, but secondary |\n| **zkSync/Linea** | ZK security, account abstraction | Newer/niche; less mature DeFi ecosystem        | Growing, but not leading      |\n\nBase is a close #2 for beginners or high-vol"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_arbitrum_optimism",
+          "query": "Arbitrum vs Optimism: which has more DeFi activity?",
+          "matched_alias": "Superchain",
+          "context": "    | Trails Arbitrum                  | [4] |\n| **Ecosystem Focus**    | DeFi powerhouse (e.g., Uniswap, Synthetix, GMX, Fluid, Radiant); high liquidity/user base | Strong but smaller DeFi presence; Superchain focus | [1], [2], [3], [6] |\n\n### Why Arbitrum Leads in DeFi\n- **Established Dominance**: Arbitrum's larger TVL, transaction throughput (400 TPS vs. Optimism's 300 TPS), and broader dApp adoption mak"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_arbitrum_optimism",
+          "query": "Arbitrum vs Optimism: which has more DeFi activity?",
+          "matched_alias": "Superchain",
+          "context": "itrum ([2], [6]).\n- **Technical Edge**: Nitro stack optimizes costs/performance for DeFi; multi-round fraud proofs enhance reliability ([3]).\n- **Optimism's Strengths**: Competitive in efficiency and Superchain interoperability (e.g., Base integration), but trails in raw DeFi scale ([3], [5], [6]).\n\nArbitrum is the clear DeFi leader for liquidity, activity, and adoption across these analyses. For real-time "
+        }
+      ]
+    },
+    {
+      "protocol_id": "dydx-v4",
+      "total_mentions": 3,
+      "by_provider": {
+        "perplexity/sonar-pro": 3
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_hyperliquid_dydx",
+          "query": "Hyperliquid vs dYdX: which perp DEX has more volume?",
+          "matched_alias": "dYdX v4",
+          "context": " has significantly more trading volume than dYdX as of April 2026.**\n\n### Key Volume Metrics from Recent Comparisons\n- **Daily Volume**: Hyperliquid processes **~$7B** (ranging $5-10B) per day, while dYdX v4 is in the **$100-300M** range—a **20-50x gap** ([1], DefiLlama data).\n- **Open Interest**: Hyperliquid: **$3B+** across 200+ markets; dYdX: **under $500M** across ~80-180 markets ([1]).\n- **24-Hour D"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_hyperliquid_dydx",
+          "query": "Hyperliquid vs dYdX: which perp DEX has more volume?",
+          "matched_alias": "dYdX v4",
+          "context": "in Oct 2025 (22% DEX-CEX share) ([4]).\n\n### Why Hyperliquid Dominates\nHyperliquid's custom L1 enables sub-second fills, zero gas fees, and deep liquidity from community vaults, driving its lead since dYdX v4's Cosmos migration in late 2023 caused a volume collapse ([1], [2]). It's now the top perp DEX by volume, speed, and markets ([1], [5]).\n\n| Metric          | Hyperliquid          | dYdX v4           "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_hyperliquid_dydx",
+          "query": "Hyperliquid vs dYdX: which perp DEX has more volume?",
+          "matched_alias": "dYdX v4",
+          "context": "lead since dYdX v4's Cosmos migration in late 2023 caused a volume collapse ([1], [2]). It's now the top perp DEX by volume, speed, and markets ([1], [5]).\n\n| Metric          | Hyperliquid          | dYdX v4             |\n|-----------------|----------------------|---------------------|\n| Daily Volume   | ~$7B ($5-10B)       | $100-300M          |\n| Open Interest  | $3B+                | <$500M           "
+        }
+      ]
+    },
+    {
+      "protocol_id": "kelp",
+      "total_mentions": 3,
+      "by_provider": {
+        "perplexity/sonar-pro": 3
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_recent_exploits",
+          "query": "What were the biggest DeFi exploits in the last 6 months?",
+          "matched_alias": "Kelp",
+          "context": "orth Korean hackers used social engineering to compromise two Drift employees, gaining admin access to make unauthorized protocol changes and drain user funds.\n   - **Source**: DL News [3]\n\n#### 2. **Kelp DAO (Ethereum-based restaking app) - $273M**\n   - **Date**: April 2026\n   - **Details**: Exploited a misconfigured LayerZero bridge instance requiring only a single operator signature, allowing hacke"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_recent_exploits",
+          "query": "What were the biggest DeFi exploits in the last 6 months?",
+          "matched_alias": "Kelp",
+          "context": "**: Exploited a misconfigured LayerZero bridge instance requiring only a single operator signature, allowing hackers to bypass controls.\n   - **Source**: DL News [3]\n   - **Combined Impact**: Drift + Kelp = **$558M** (86% of April's total).\n\n#### Other Notable Mentions\n- **Aftermath Finance (Sui blockchain DEX)**: Hit in April 2026 as part of the 29 total exploits, but exact loss not specified beyond "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_recent_audit_failures",
+          "query": "Which DeFi protocols have had recent audit issues or exploits?",
+          "matched_alias": "Kelp",
+          "context": "oss chains\n- Highlights issue: Even with visible fund flows and real-time monitoring, frozen assets weren't recovered\n- Transitioning settlement from USDC to USDT with Tether's recovery support\n\n## **Kelp DAO** (~$71M Frozen)\n- Exploited; Arbitrum Security Council froze $71M in stolen ETH on April 21, 2026\n- Isolated market structure prevented contagion spread\n\n## **Mango Markets** ($112M Exploit)\n- D"
+        }
+      ]
+    },
+    {
+      "protocol_id": "okx",
+      "total_mentions": 3,
+      "by_provider": {
+        "perplexity/sonar-pro": 3
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_stablecoin_yield",
+          "query": "How do I get the highest yield on USDC right now?",
+          "matched_alias": "OKX",
+          "context": "* | **17%** | Rewards | None listed | Check terms | [CoinInterestRate #6] |\n| **Maple Finance** | **Up to 23%** | Overcollateralized lending (via Syrup: 15%+ target) | Varies | Yes | [Mural #3] |\n| **OKX** | **9.13%** | Lending | None listed | Check terms | [Bitcompare #1] |\n| **Aave V3 (DeFi)** | Varies (~5-20% supply APY) | Lending pool ($3.25B TVL) | None (gas fees) | Yes (wallet needed) | [De.fi "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_ethena_safety",
+          "query": "Is Ethena USDe safe to hold?",
+          "matched_alias": "OKX",
+          "context": "\n- **Diversified Backing and Hedging**: USDe is backed ~50% by BTC, 30% by ETH, 11% by ETH LSTs, and 8% by USDT (per Ethena's site). Shorts are spread across 5+ exchanges (48% Binance, 23% Bybit, 20% OKX, etc.) to avoid single-point failures. This held up during events like the Bybit hack and October 2023 flash crash (CoinMetrics analysis).\n- **Reserve Fund for Negative Funding**: Yield relies on pos"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "lt_mev_protected_dex",
+          "query": "Which DEXes have MEV protection?",
+          "matched_alias": "OKX",
+          "context": "er.io** - MEV protection service\n- **dRPC** - MEV protection (premium feature, $1+/unit)\n\n### **Via Wallets with Built-in Protection:**\n- **Trust Wallet** - Toggle MEV Protection in swap settings\n- **OKX Wallet** - MEV protection available\n- **TokenPocket Wallet** - MEV protection available\n- **Binance Web3 Wallet** - MEV protection enabled by default\n\n## **Key Advantage:**\nThe most robust MEV protec"
+        }
+      ]
+    },
+    {
+      "protocol_id": "kalshi",
+      "total_mentions": 3,
+      "by_provider": {
+        "perplexity/sonar-pro": 3
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_prediction_market",
+          "query": "What are the best prediction markets in 2026?",
+          "matched_alias": "Kalshi",
+          "context": "lyses from Token Metrics, RotoWire, Covers, Squawka, Action Network, and others, here are the **standouts**, ranked by consensus across liquidity, U.S. accessibility, volume, and features.\n\n#### 1. **Kalshi** (Best Overall, Top Volume Leader)\n   - **Why #1**: CFTC-regulated U.S. powerhouse with 66% market share by Sept 2026, surpassing Polymarket in trading volume. Offers crypto deposits, diverse contra"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_prediction_market",
+          "query": "What are the best prediction markets in 2026?",
+          "matched_alias": "kalshi",
+          "context": "s), and high liquidity.\n   - **Best for**: U.S. users wanting compliance and reliability.\n   - **Evidence**: Ranked #1 by RotoWire, Squawka, Covers; Token Metrics highlights its surge.\n   - **Site**: kalshi.com\n\n#### 2. **Polymarket** (Best for Crypto & Event Variety)\n   - **Why Top**: Largest decentralized market on blockchain (USDC-based), with unmatched liquidity and user-friendly interface. Proven e"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_prediction_market",
+          "query": "What are the best prediction markets in 2026?",
+          "matched_alias": "Kalshi",
+          "context": "g tools, not just gambling. Volumes hit billions, per MetaMask/Polymarket data. For crypto focus, pair with AI tools like Token Metrics for price predictions. Always check local regs—U.S. users favor Kalshi/Polymarket."
+        }
+      ]
+    },
+    {
+      "protocol_id": "near-intents",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_chain_abstraction",
+          "query": "Which chain abstraction protocols should I know about?",
+          "matched_alias": "NEAR Intents",
+          "context": "oss-protocol trades via text intents. Modular order flow auctions. | DeFi abstraction layer; user-friendly intents. |\n| **NEAR Chain Abstraction** | Chain Signatures (MPC for cross-chain tx signing); NEAR Intents for AI-autonomous execution (e.g., portfolio rebalancing). | Mature; enables AI agents as a universal settlement layer. Supports non-smart contract chains. |\n\n#### Foundational Tech Components (Enabl"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_chain_abstraction",
+          "query": "Which chain abstraction protocols should I know about?",
+          "matched_alias": "NEAR Intents",
+          "context": "ategory for market caps/tokens.\n- **Risks**: Many testnet-only; focus on audited liquidity and sequencer decentralization.\n\nStart with Particle's UniversalX for hands-on experience. For devs, explore NEAR Intents or Enso docs. Track @handles for updates—the narrative is shifting from theory to apps."
+        }
+      ]
+    },
+    {
+      "protocol_id": "goldfinch",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_recent_launches",
+          "query": "What new DeFi protocols launched in 2026 are worth watching?",
+          "matched_alias": "Goldfinch",
+          "context": "atch in 2026.\" |\n| **Morpho** | Lending Optimizer | Builds on Aave/Compound for cheaper borrowing/higher yields. | #11 | \"Emphasis on... making lending in DeFi more efficient... still growing.\" |\n| **Goldfinch (GFI)** | RWA/Private Credit | On-chain access to stable-yield private credit; strong institutional play. | Top RWA (Source [3]) | \"Expands access to private credit... dominant RWA segment.\" |\n| **Tr"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_real_world_assets",
+          "query": "What are the top RWA (real world asset) protocols?",
+          "matched_alias": "Goldfinch",
+          "context": "g tokenized gold (commodities RWA). Fully backed, auditable reserves.  \n   - **Key stats**: $2.18B TVL (RWA.xyz #5); +2.92% 7D despite -8.82% 30D volatility.  \n   - **Networks**: Ethereum.\n\n#### 7. **Goldfinch (GFI)**  \n   - **Why top?** Undercollateralized loans to real-world borrowers using off-chain credit scores. Hybrid DeFi-TradFi model.  \n   - **Key stats**: Strong in emerging markets; top-10 per Coi"
+        }
+      ]
+    },
+    {
+      "protocol_id": "uniswap-v2",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_base_defi",
+          "query": "What's the most active DeFi protocol on Base?",
+          "matched_alias": "Uniswap V2",
+          "context": "ernight Finance ($USD+)**: Top CDP platform on Base, but no specific TVL/volume figures given—likely trails SeamlessFi (CoinBrain [4]).\n- **Aerodrome/DFD**: High DEX trading volume (e.g., DFD/WETH on Uniswap V2 Base), but DEX-focused and not topping TVL charts (KuCoin [2]; CoinGecko [7]).\n- Broader lists (Alchemy [3], DeFiLlama [5], QuickNode [6]) highlight DEXs like Uniswap or Aerodrome, but none explicitl"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_recent_audit_failures",
+          "query": "Which DeFi protocols have had recent audit issues or exploits?",
+          "matched_alias": "Uniswap V2",
+          "context": "Exploited despite multiple security audits from reputable firms\n- Hacken conducted 80% of their audits since inception\n- Also audited by Coinspect (March 2026) and CertiK (June 2021)\n- Vulnerability: Uniswap V2 to V3 migration function\n- Most common vulnerability type: Lack of or faulty input verification (34.6% of DeFi hacks)\n\n## **Drift Protocol** ($295M Exploit)\n- Drained of $295 million in April 2026\n- "
+        }
+      ]
+    },
+    {
+      "protocol_id": "portal",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_monad_protocols",
+          "query": "What protocols are launching on Monad?",
+          "matched_alias": "Portal",
+          "context": "nce, testing) before full mainnet activation. Here's a breakdown:\n\n#### Already Live or Accessible\n- **Core Monad Features**: MON staking, bridging, DeFi/gaming/consumer apps (dozens integrated).\n- **Portal**: Acquired by Monad Foundation; provides full-stack stablecoin infrastructure and payments solution, now live on mainnet.\n\n#### Upcoming/Integrating Protocols (Next Phase)\n- **Dozens of Well-Known ("
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_monad_protocols",
+          "query": "What protocols are launching on Monad?",
+          "matched_alias": "Portal",
+          "context": "/daic.capital/blog/monad-mainnet-guide) | Live staking/bridging/DeFi; blue-chips & natives incoming. |\n| [Monad Official Announcements](https://www.monad.xyz/announcements) | MON token (100B supply), Portal acquisition, Momentum/AI programs. |\n| [KuCoin Blog](https://www.kucoin.com/blog/monad-project-introduction) | Mainnet live late 2025. |\n| [Monad.xyz](https://www.monad.xyz/announcements) | EVM-compa"
+        }
+      ]
+    },
+    {
+      "protocol_id": "memecoin",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_ton_apps",
+          "query": "What are the most popular apps on TON?",
+          "matched_alias": "memecoin",
+          "context": "simple \"tap-to-earn\" mechanics, airdrops, and social virality:\n\n| App/Game | Category | Key Metrics | Highlights |\n|----------|----------|-------------|------------|\n| **Notcoin (NOT)** | Tap-to-earn memecoin game | 35M+ users; foundational TON template | Viral clicker in Telegram; largest token launch; evolved into protocol with social features. |\n| **Hamster Kombat (HMSTR)** | Tap-to-earn CEO simulator "
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_ton_apps",
+          "query": "What are the most popular apps on TON?",
+          "matched_alias": "memecoin",
+          "context": "Notable High-Performers\n- **JetTon Games (JETTON)**: Casino/gaming platform with 3,900+ slots, 290+ games, 300+ card games. Deep Telegram integration for casual/strategy play.\n- **Blum**: Non-gaming; memecoin creation, token farming, DeFi in-chat. Expanded beyond games.\n- Emerging P2E mentions (YouTube 2026): **Boinkers** (crypto parody), **TapTopia** (tap adventure), **Dig It** (mining), **Azuki Alley Es"
+        }
+      ]
+    },
+    {
+      "protocol_id": "aave-v3",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cmp_aave_compound",
+          "query": "Aave vs Compound: which has more liquidity in 2026?",
+          "matched_alias": "Aave V3",
+          "context": "4 chains) | $2–3B (Ethereum-focused) | Aave outpaces Compound. |\n| [3] Eco | $20–26B (22+ networks) | $2B+ | Aave has \"maximum depth and chain coverage.\" |\n| [5] Fensory | $15.2B (8 chains) | $4.8B | Aave V3 data; USDC supply APY 4.2% vs. 4.0%. |\n\n### Key Reasons for Aave's Liquidity Edge\n- **Multi-chain dominance**: Aave spans 7–22+ networks (e.g., L2s like Base, Arbitrum), enabling broader access and t"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_stablecoin_yield",
+          "query": "How do I get the highest yield on USDC right now?",
+          "matched_alias": "Aave V3",
+          "context": "Maple Finance** | **Up to 23%** | Overcollateralized lending (via Syrup: 15%+ target) | Varies | Yes | [Mural #3] |\n| **OKX** | **9.13%** | Lending | None listed | Check terms | [Bitcompare #1] |\n| **Aave V3 (DeFi)** | Varies (~5-20% supply APY) | Lending pool ($3.25B TVL) | None (gas fees) | Yes (wallet needed) | [De.fi #4], [CoinMarketCap #7] |\n\n- **Highest overall: Lune.fi at 29.5% APY** (Bitcompare l"
+        }
+      ]
+    },
+    {
+      "protocol_id": "resolv",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_trending_now",
+          "query": "What's trending in crypto right now?",
+          "matched_alias": "Resolv",
+          "context": "-----|---------------|\n| **Freysa (FAI)** | $0.0071 | +133% | +420% | $58M | Insane weekly surge, meme-like hype. |\n| **Dego Finance (DEGO)** | $0.676 | +124% | +107% | $14M | Altcoin breakout. |\n| **Resolv (RESOLV)** | $0.126 | +107% | +85% | $46M | Strong momentum. |\n| **Bitway (BTW)** | $0.020 | +93% | +158% | $44M | Volume explosion. |\n| **Aria (ARIA)** | $0.132 | +90% | +114% | $39M | AI/token hype"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_trending_now",
+          "query": "What's trending in crypto right now?",
+          "matched_alias": "RESOLV",
+          "context": "-------------|\n| **Freysa (FAI)** | $0.0071 | +133% | +420% | $58M | Insane weekly surge, meme-like hype. |\n| **Dego Finance (DEGO)** | $0.676 | +124% | +107% | $14M | Altcoin breakout. |\n| **Resolv (RESOLV)** | $0.126 | +107% | +85% | $46M | Strong momentum. |\n| **Bitway (BTW)** | $0.020 | +93% | +158% | $44M | Volume explosion. |\n| **Aria (ARIA)** | $0.132 | +90% | +114% | $39M | AI/token hype. |\n| **"
+        }
+      ]
+    },
+    {
+      "protocol_id": "ratio",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "persona_degen",
+          "query": "I want to maximize my yield even with high risk. What should I look at?",
+          "matched_alias": "Ratio",
+          "context": ". **Diversify Aggressively**: Per [3]'s MPT, spread across 3-5 categories (e.g., 40% emerging markets, 30% junk bonds, 20% REITs, 10% crypto). This cuts unsystematic risk while chasing returns—Sharpe Ratio >1 targets risk-adjusted gains.\n2. **Bottom-Up Selection**: Like [1] and [4], prioritize fundamentals (e.g., debt coverage >2x for bonds) over macro bets.\n3. **Tax Optimize**: Use tax-loss harvesting"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "persona_degen",
+          "query": "I want to maximize my yield even with high risk. What should I look at?",
+          "matched_alias": "Ratio",
+          "context": "rning**: Historical data (e.g., high-yield defaults spiked 10%+ in 2020) shows 20-50% drawdowns possible. Consult a fiduciary advisor; past performance ≠ future results. Start small, track via Sharpe Ratio. For 10%+ safely? Mix with bonds [2], but that's not \"max yield.\""
+        }
+      ]
+    },
+    {
+      "protocol_id": "pendle",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_ethena_safety",
+          "query": "Is Ethena USDe safe to hold?",
+          "matched_alias": "Pendle",
+          "context": "ts only for minting/redeeming; assets routed solely to vetted OES (On-Exchange Settlement) providers like institutional custodians. Multiple audits, off-exchange custody, and DeFi integrations (Aave, Pendle) enhance composability (Ethena docs, Phemex).\n- **Resilience Shown**: No catastrophic failure to date. Depegs have been minor and recovered; shift to more stablecoin backing reduced organic risks (Ch"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "persona_eth_holder",
+          "query": "I have 5 ETH and want to earn yield without selling. What are my options?",
+          "matched_alias": "Pendle",
+          "context": "ed) | Layers extra yield; referral airdrops | Newer, check TVL |\n   | **Rocket Pool** | 4-6% | ETH → rETH | Decentralized nodes | Slightly complex |\n\n   **Restaking Boost**: Use stETH/eETH in Aave or Pendle for +2-5% (total 6-12%). Example: 10 ETH at 4% = 0.4 ETH/year; restaking hits 0.6-0.8 ETH (AirdropAlert).\n\n#### Recommended Starter Strategy for 5 ETH\n- **Conservative (Low Risk)**: 100% in Aave lend"
+        }
+      ]
+    },
+    {
+      "protocol_id": "mexc",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_dex_eth",
+          "query": "What's the best DEX on Ethereum right now?",
+          "matched_alias": "MEXC",
+          "context": "r efficient AMM pricing, making it the go-to for Ethereum swaps.\n\nIt's consistently #1 in multiple sources:\n- YouTube top 5 [1]: \"Leading Ethereum-based DEX.\"\n- AMBCrypto's top 6 for May 2026 [2] and MEXC's April list [4] rank it at the top.\n- Other lists like CrypticWeb3 [7] and Alchemy [5] affirm its Ethereum leadership.\n\nEthereum-specific alternatives like older forks (e.g., SushiSwap) trail far be"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_stablecoin",
+          "query": "Which stablecoin is the safest to hold in 2026?",
+          "matched_alias": "MEXC",
+          "context": "\" and is \"the safest for long-term holding.\"\n- **Laika AI (Result 5)**: Names USDC as one of the safest, alongside PYUSD, for GENIUS Act compliance, monthly audits, and full reserve transparency.\n- **MEXC Blog (Result 6)**: Calls USDC the \"institutional favorite with unmatched transparency,\" with monthly attestations from Grant Thornton and full U.S. licensing.\n\n| Stablecoin | Key Safety Strengths | C"
+        }
+      ]
+    },
+    {
+      "protocol_id": "frax",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_lst_eth",
+          "query": "What's the best liquid staking token for ETH?",
+          "matched_alias": "Frax",
+          "context": "risks. |\n| **cbETH** | Coinbase | ~5-10% (growing) | Multi-billion | ~3.5% | Regulated (public company), easy for beginners via Coinbase. | Less DeFi composability; custody reliance. |\n| **frxETH** | Frax | ~5% | Billions | ~3.5-4% | Stable value peg, strong in Frax ecosystem. | Smaller liquidity pool. |\n| **swETH / rswETH** | Swell | Emerging (~2-5%) | Growing | swETH: 3.7%; rswETH: 3.08% (includes r"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_lst_eth",
+          "query": "What's the best liquid staking token for ETH?",
+          "matched_alias": "Frax",
+          "context": "lion | ~3.5% | Regulated (public company), easy for beginners via Coinbase. | Less DeFi composability; custody reliance. |\n| **frxETH** | Frax | ~5% | Billions | ~3.5-4% | Stable value peg, strong in Frax ecosystem. | Smaller liquidity pool. |\n| **swETH / rswETH** | Swell | Emerging (~2-5%) | Growing | swETH: 3.7%; rswETH: 3.08% (includes restaking) | Restaking options for extra yields. | Newer protoc"
+        }
+      ]
+    },
+    {
+      "protocol_id": "robinhood",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_prediction_market",
+          "query": "What are the best prediction markets in 2026?",
+          "matched_alias": "Robinhood",
+          "context": "k data shows massive volume; Intercontinental Exchange owns 25%.\n   - **Promo**: COVERS code for $10 deposit/$20 bonus (via Covers).\n   - **Site**: [polymarket.com](https://polymarket.com)\n\n#### 3. **Robinhood Predictions** (Best for Beginners)\n   - **Why Strong**: Integrated into Robinhood app via Susquehanna/MIAX acquisition—regulated, seamless for stocks users. Expanding beyond sports/elections.\n   - **"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_prediction_market",
+          "query": "What are the best prediction markets in 2026?",
+          "matched_alias": "Robinhood",
+          "context": "OVERS code for $10 deposit/$20 bonus (via Covers).\n   - **Site**: [polymarket.com](https://polymarket.com)\n\n#### 3. **Robinhood Predictions** (Best for Beginners)\n   - **Why Strong**: Integrated into Robinhood app via Susquehanna/MIAX acquisition—regulated, seamless for stocks users. Expanding beyond sports/elections.\n   - **Best for**: Newbies transitioning from stock trading.\n   - **Evidence**: #4 in Rot"
+        }
+      ]
+    },
+    {
+      "protocol_id": "bitrue",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_stablecoin",
+          "query": "Which stablecoin is the safest to hold in 2026?",
+          "matched_alias": "Bitrue",
+          "context": "USDC as the top choice for safety, prioritizing transparency, high-quality reserves (cash and short-term U.S. Treasuries), and regulatory compliance. Here's the evidence from the search results:\n\n- **Bitrue (Result 1)**: \"USDC is widely regarded as the safest stablecoin for most users\" and \"the most balanced option,\" thanks to monthly third-party attestations by Circle and strong institutional adoption."
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_stablecoin",
+          "query": "Which stablecoin is the safest to hold in 2026?",
+          "matched_alias": "Bitrue",
+          "context": "| Lower liquidity |\n| **TUSD** | Real-time attestations | Relies on partner banks |\n\n### Comparison to Alternatives\n- **USDT (Tether)** dominates in liquidity and trading volume (e.g., #1 in ChainUp, Bitrue), but trails USDC in transparency and regulation—making it better for high-frequency trading than pure safety.\n- Niche options like GUSD, TUSD, or PYUSD score high on specific metrics (e.g., audits) "
+        }
+      ]
+    },
+    {
+      "protocol_id": "yearn-finance",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Yearn Finance",
+          "context": "# Best DeFi Yield Aggregators\n\nBased on the latest information, here are the top yield aggregators in DeFi:\n\n## Top Recommendations\n\n1. **Yearn Finance** – The pioneering \"yield cow\" of DeFi, continuously innovating vault strategies since early 2020. Best for advanced farmers seeking sophisticated strategies.\n\n2. **Convex Finance** – A CRV token boo"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Yearn Finance",
+          "context": "* – Specializes in capital-efficient DeFi liquidity management.\n\n## Key Considerations\n\n- **For beginners**: Beefy Finance and Idle Finance offer simple, automated solutions\n- **For advanced users**: Yearn Finance and Harvest Finance provide more sophisticated strategies\n- **Multi-chain coverage**: Beefy Finance operates across multiple blockchains\n\nMost yield aggregators handle auto-compounding and optimizati"
+        }
+      ]
+    },
+    {
+      "protocol_id": "harvest-finance",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Harvest Finance",
+          "context": "ting protocol that optimizes Curve Finance yields.\n\n3. **Beefy Finance** – A multi-chain yield optimizer that removes the hassle of daily harvests. Excellent for set-it-and-forget-it investors.\n\n4. **Harvest Finance** – An automated yield maximizer that farms the highest yields from new DeFi protocols using the latest techniques.\n\n5. **Idle Finance** – Perfect for passive investors seeking a \"set and forget\" app"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Harvest Finance",
+          "context": " capital-efficient DeFi liquidity management.\n\n## Key Considerations\n\n- **For beginners**: Beefy Finance and Idle Finance offer simple, automated solutions\n- **For advanced users**: Yearn Finance and Harvest Finance provide more sophisticated strategies\n- **Multi-chain coverage**: Beefy Finance operates across multiple blockchains\n\nMost yield aggregators handle auto-compounding and optimization automatically, re"
+        }
+      ]
+    },
+    {
+      "protocol_id": "mass",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_restaking",
+          "query": "What are the risks of restaking with EigenLayer?",
+          "matched_alias": "mass",
+          "context": "en validating for AVSs (actively validated services) in exchange for additional yield\n- Potential loss of ETH for non-compliance or faulty validator behavior\n- Excessive slashing events could trigger mass unstaking and destabilize Ethereum itself\n\n## **Systemic & Protocol-Level Risks**\n\n**Correlated Risk Problem:**\n- If the same stake is restaked across multiple AVSs by the same validator, the cumulat"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_lst_depeg",
+          "query": "What's the risk of stETH depegging?",
+          "matched_alias": "mass",
+          "context": "MMs arbitrage small deviations but exit on big ones to protect books. | 2022: Sold stETH <1 ETH, crashing reserves [2]. |\n| **Leveraged Staking Demand** | Profitable in bulls; unprofitable in bears → mass unwinds. | Glassnode: High borrow rates killed strategies [3]. |\n| **Broader Contagion** | Interlinked DeFi (Curve → Aave → etc.) amplifies shocks. | Terra (unrelated chain) hit stETH via leverage [2"
+        }
+      ]
+    },
+    {
+      "protocol_id": "garden",
+      "total_mentions": 2,
+      "by_provider": {
+        "perplexity/sonar-pro": 2
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_bridge_to_arbitrum",
+          "query": "What's the cheapest bridge to move USDC to Arbitrum?",
+          "matched_alias": "Garden",
+          "context": "# Cheapest USDC Bridge to Arbitrum\n\nBased on the search results, here are your best options:\n\n## Top Recommendations\n\n**1. Garden Finance** (Best Overall)\n- **Fee**: Near-zero bridge fees, only minimal gas costs\n- **Example**: $10,000 transfer costs $50-150 total (vs $50-150+ on traditional bridges)\n- **Speed**: Sub-30 second e"
+        },
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_bridge_to_arbitrum",
+          "query": "What's the cheapest bridge to move USDC to Arbitrum?",
+          "matched_alias": "Garden",
+          "context": " you can capture whichever option is cheapest for your specific amount and lane at the time of transfer.\n\n**Bottom line**: If speed isn't critical, the canonical bridge is free. For fast transfers, **Garden Finance appears to offer the best fee structure** in 2026, followed by Orbiter/Across for smaller amounts."
+        }
+      ]
+    },
+    {
+      "protocol_id": "movement",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_chain_abstraction",
+          "query": "Which chain abstraction protocols should I know about?",
+          "matched_alias": "Movement",
+          "context": "chains). Stores execution data per contract. | Testnet; no mainnet product yet. |\n| **Tria** (@useTria) | Cross-VM access (EVM, SVM, Cosmos) on Arbitrum; no wallet switches or gas worries. Powered by Movement. | Niche Arbitrum focus; live wallet experience. |\n| **OneBalance** | One account/balance; pay gas with any token/chain; cross-chain abstraction. | Testnet wallet; basic UX, lacks Solana support. |\n\n"
+        }
+      ]
+    },
+    {
+      "protocol_id": "1inch",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_intent_protocols",
+          "query": "What are intent-based DeFi protocols and which are leading?",
+          "matched_alias": "1inch",
+          "context": "ection via solver competition.         | Swaps, trading            |\n| **UniswapX**     | Liquidity aggregation; gas-free Dutch auctions.                             | Swaps                     |\n| **1inch Fusion** | Solvers execute orders; they cover gas fees for users.                      | Swaps, aggregation        |\n| **Across Protocol** | Fast cross-chain bridging via intents.                    "
+        }
+      ]
+    },
+    {
+      "protocol_id": "paxos-gold",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_real_world_assets",
+          "query": "What are the top RWA (real world asset) protocols?",
+          "matched_alias": "Paxos Gold",
+          "context": " via Securitize. Institutional gold standard with massive TVL.  \n   - **Key stats**: $2.38B TVL (RWA.xyz #4); +4.35% 7D change, 3.46% APY. Ethereum-dominant.  \n   - **Networks**: Ethereum.\n\n#### 6. **Paxos Gold (PAXG)**  \n   - **Why top?** Leading tokenized gold (commodities RWA). Fully backed, auditable reserves.  \n   - **Key stats**: $2.18B TVL (RWA.xyz #5); +2.92% 7D despite -8.82% 30D volatility.  \n   -"
+        }
+      ]
+    },
+    {
+      "protocol_id": "brickken",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_real_world_assets",
+          "query": "What are the top RWA (real world asset) protocols?",
+          "matched_alias": "Brickken",
+          "context": " **Total RWA Market**: $50.6B (CoinGecko, +0.5% 24h). Subsectors: Tokenized Assets (+0.8%), RWA Protocol (+254% volatile).\n- **Standards/Platforms**: ERC3643 for interoperability; Tokeny, Securitize, Brickken for issuance.\n- **Growth Drivers**: Institutional adoption (BlackRock, DTCC), L2s (Base, Arbitrum), and chains like Solana/XRPL for speed/low-cost.\n\n**Caveats**: Rankings evolve rapidly (e.g., check "
+        }
+      ]
+    },
+    {
+      "protocol_id": "zksync-era",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_zk_apps",
+          "query": "What are the most exciting zk applications in 2026?",
+          "matched_alias": "zkSync Era",
+          "context": "nd delivers sub-cent fees with near-instant finality. Powers DeFi, gaming, and payments at scale.\n   | Project | Key Highlights | 2026 Traction |\n   |---------|----------------|--------------|\n   | **zkSync Era** | EVM-compatible zk-rollup with native account abstraction; Atlas upgrade hits 30,000 TPS; $5B+ TVL; DeFi/gaming hub (e.g., 27M monthly txns). | Leads TVL; institutional payments/tokenization. |\n  "
+        }
+      ]
+    },
+    {
+      "protocol_id": "immutable-zkevm",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_zk_apps",
+          "query": "What are the most exciting zk applications in 2026?",
+          "matched_alias": "Immutable zkEVM",
+          "context": "   | **StarkNet** | zk-STARK rollup with Cairo VM; high-speed dApps; supports massive DeFi apps. | Top TVL contender; 2,000+ TPS. |\n   | **Immutable X (IMX)** | Gas-free NFT minting/gaming zk-rollup; Immutable zkEVM for Web2-to-crypto onboarding; $920M market cap, $22M TVL. | Dominates Web3 gaming ($121B mobile market). |\n   | **Polygon zkEVM / Scroll** | Ethereum-equivalent scaling; perfect equivalence for devs"
+        }
+      ]
+    },
+    {
+      "protocol_id": "worldcoin",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "cat_zk_apps",
+          "query": "What are the most exciting zk applications in 2026?",
+          "matched_alias": "Worldcoin",
+          "context": "ghts | 2026 Traction |\n   |---------|----------------|--------------|\n   | **Mina Protocol** | Recursive zk-SNARKs; world's lightest blockchain. | Mobile-friendly; recursive proofs for apps. |\n   | **Worldcoin (WLD) / Humanity** | ZK human verification + zkTLS for identity (e.g., \"prove funds without docs\"). | Proof-of-personhood + real-world ID (DAOs, verifiers). |\n   | **Ola** | Programmable privacy sett"
+        }
+      ]
+    },
+    {
+      "protocol_id": "overnight-finance",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_base_defi",
+          "query": "What's the most active DeFi protocol on Base?",
+          "matched_alias": "Overnight Finance",
+          "context": " DeFi TVL |\n  | Ranking | Top 3 by TVL/volume | 189+ projects (DeFi Prime [1]) |\n  | Active Addresses | N/A (ecosystem: 68.5M+) | DefiLlama [5] for real-time |\n\n### Comparison to Other Contenders\n- **Overnight Finance ($USD+)**: Top CDP platform on Base, but no specific TVL/volume figures given—likely trails SeamlessFi (CoinBrain [4]).\n- **Aerodrome/DFD**: High DEX trading volume (e.g., DFD/WETH on Uniswap V2 Base"
+        }
+      ]
+    },
+    {
+      "protocol_id": "infrared-finance",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_berachain_dapps",
+          "query": "What are the top dApps on Berachain?",
+          "matched_alias": "Infrared Finance",
+          "context": "-----|---------|\n| **Kodiak Finance** | AMM/DEX          | Berachain-native DEX for token swaps; top platform by volume and fees (+42% weekly fee growth). | TVL: $1B+<br>Volume: $500M+ | [2]    |\n| **Infrared Finance** | Liquid Staking  | Tokenizes staked BERA/BGT; most-used dApp overall.                           | TVL: $1.78B              | [2]    |\n| **D2 Finance**    | Yield Strategies | Offers unique vaults "
+        }
+      ]
+    },
+    {
+      "protocol_id": "d2-finance",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_berachain_dapps",
+          "query": "What are the top dApps on Berachain?",
+          "matched_alias": "D2 Finance",
+          "context": "VL: $1B+<br>Volume: $500M+ | [2]    |\n| **Infrared Finance** | Liquid Staking  | Tokenizes staked BERA/BGT; most-used dApp overall.                           | TVL: $1.78B              | [2]    |\n| **D2 Finance**    | Yield Strategies | Offers unique vaults like HyperBera.USDC, Kodiak++, dgnBeraland; leverages ecosystem synergies. | TVL: $10M+               | [1]    |\n| **Burrbear**      | Stablecoin DEX   "
+        }
+      ]
+    },
+    {
+      "protocol_id": "ston.fi",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "chain_ton_apps",
+          "query": "What are the most popular apps on TON?",
+          "matched_alias": "STON.fi",
+          "context": "No downloads/seed phrases needed; games like Notcoin/Hamster hit 300M+ combined players by simplifying Web3.\n- **Ecosystem Impact**: Drove 200+ tokens, millions of wallets, and DeFi/NFT growth (e.g., STON.fi integration).\n- **2026 Context**: Retention leaders like Catizen/Major show shift from pure hype to sustainable engagement.\n\nFor real-time stats, check TON explorers or Telegram bots. Sources: BingX "
+        }
+      ]
+    },
+    {
+      "protocol_id": "grass",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_recent_airdrops",
+          "query": "What are the most anticipated crypto airdrops in 2026?",
+          "matched_alias": "Grass",
+          "context": "ticipated\"; part of perps DEX wave (Binance Square). |\n\n#### Other Notable Mentions\n- **Hyperliquid**: Recent HYPE token (31% to users) sets precedent; ongoing buzz (Bitcoin Foundation, DL News).\n- **Grass, Meteora, BasedApp**: Solana/TON ecosystem plays with points/activity rewards (Bitcoin Foundation, airdrops.io).\n- **Perps DEXs (Aster, EdgeX, Paradex, Extend)**: Points programs yielding big past dr"
+        }
+      ]
+    },
+    {
+      "protocol_id": "basedapp",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_recent_airdrops",
+          "query": "What are the most anticipated crypto airdrops in 2026?",
+          "matched_alias": "BasedApp",
+          "context": " of perps DEX wave (Binance Square). |\n\n#### Other Notable Mentions\n- **Hyperliquid**: Recent HYPE token (31% to users) sets precedent; ongoing buzz (Bitcoin Foundation, DL News).\n- **Grass, Meteora, BasedApp**: Solana/TON ecosystem plays with points/activity rewards (Bitcoin Foundation, airdrops.io).\n- **Perps DEXs (Aster, EdgeX, Paradex, Extend)**: Points programs yielding big past drops (e.g., Aster's "
+        }
+      ]
+    },
+    {
+      "protocol_id": "usdt0",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_recent_launches",
+          "query": "What new DeFi protocols launched in 2026 are worth watching?",
+          "matched_alias": "USDT0",
+          "context": "ike TradFi. | Top RWA/DeFi (Source [3]) | \"Shifting DeFi toward credit-based systems.\" |\n\n### 2026 Trends Signaling Potential New Launches (No Specific Names)\n- **Stablecoin Innovations**: Tether's **USDT0** (omnichain stablecoin) and Circle's Cross-Chain Transfer Protocol—recent but not full \"protocols.\" Watch for unified liquidity layers from issuers.\n- **Privacy Protocols**: Railgun and Canton Netwo"
+        }
+      ]
+    },
+    {
+      "protocol_id": "canton",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_recent_launches",
+          "query": "What new DeFi protocols launched in 2026 are worth watching?",
+          "matched_alias": "Canton",
+          "context": "er's **USDT0** (omnichain stablecoin) and Circle's Cross-Chain Transfer Protocol—recent but not full \"protocols.\" Watch for unified liquidity layers from issuers.\n- **Privacy Protocols**: Railgun and Canton Network push privacy for institutions; Ethereum may launch native privacy in 2026, spawning new tools.\n- **Appchains & Fintech Chains**: DeFi protocols and firms (e.g., Stripe's Tempo) launching cust"
+        }
+      ]
+    },
+    {
+      "protocol_id": "bitway",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_trending_now",
+          "query": "What's trending in crypto right now?",
+          "matched_alias": "Bitway",
+          "context": " | Insane weekly surge, meme-like hype. |\n| **Dego Finance (DEGO)** | $0.676 | +124% | +107% | $14M | Altcoin breakout. |\n| **Resolv (RESOLV)** | $0.126 | +107% | +85% | $46M | Strong momentum. |\n| **Bitway (BTW)** | $0.020 | +93% | +158% | $44M | Volume explosion. |\n| **Aria (ARIA)** | $0.132 | +90% | +114% | $39M | AI/token hype. |\n| **Sign (SIGN)** | $0.053 | +91% | +99% | $86M | Top Binance gainer. "
+        }
+      ]
+    },
+    {
+      "protocol_id": "bittensor",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_trending_now",
+          "query": "What's trending in crypto right now?",
+          "matched_alias": "Bittensor",
+          "context": "14% | $39M | AI/token hype. |\n| **Sign (SIGN)** | $0.053 | +91% | +99% | $86M | Top Binance gainer. |\n\n#### Other Notables\n- **Solana (SOL)**: Price ~$188 (+1.3% 24h, +4% 7d). High volume ($11B).\n- **Bittensor (TAO)**: $200 (+4% 24h). AI narrative strong.\n- **Chainlink (LINK)**: $9.46 (trending on LiveCoinWatch).\n- Coinbase spots: **Anoma**, **Aster**, **Internet Computer** as top performers.\n\n**Market Con"
+        }
+      ]
+    },
+    {
+      "protocol_id": "internet-computer",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "evt_trending_now",
+          "query": "What's trending in crypto right now?",
+          "matched_alias": "Internet Computer",
+          "context": "1.3% 24h, +4% 7d). High volume ($11B).\n- **Bittensor (TAO)**: $200 (+4% 24h). AI narrative strong.\n- **Chainlink (LINK)**: $9.46 (trending on LiveCoinWatch).\n- Coinbase spots: **Anoma**, **Aster**, **Internet Computer** as top performers.\n\n**Market Context**: Total crypto volume down ~4% (Coinbase), but BTC/ETH volumes up sharply. Focus on high-volume pumps like Vine/Freysa for short-term plays—DYOR, as volatility"
+        }
+      ]
+    },
+    {
+      "protocol_id": "tbtc",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "lt_btc_yield_native",
+          "query": "How can I earn yield on native Bitcoin without wrapping it?",
+          "matched_alias": "tBTC",
+          "context": " used in smart contract-based DeFi like lending or staking on chains like Ethereum or Starknet because Bitcoin's base layer lacks smart contracts. Most yield options require **wrapping** (e.g., WBTC, tBTC) or **bridging** to sidechains/L2s (e.g., Rootstock's RBTC). However, a few methods claim to generate yield **without wrapping or bridging**, primarily through **timelocking** or custodial services. "
+        }
+      ]
+    },
+    {
+      "protocol_id": "flashbots",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "lt_mev_protected_dex",
+          "query": "Which DEXes have MEV protection?",
+          "matched_alias": "Flashbots",
+          "context": "ault** on Ethereum Mainnet\n- Routes swaps through **private mempools**\n- Protects from sandwich attacks and front-running\n\n## **How to Access MEV Protection:**\n\n### **Via Private RPC Endpoints:**\n- **Flashbots Protect** - Private mempool routing + gas fee refunds\n- **mevblocker.io** - MEV protection service\n- **dRPC** - MEV protection (premium feature, $1+/unit)\n\n### **Via Wallets with Built-in Protection:"
+        }
+      ]
+    },
+    {
+      "protocol_id": "unit",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "lt_mev_protected_dex",
+          "query": "Which DEXes have MEV protection?",
+          "matched_alias": "unit",
+          "context": "\n\n### **Via Private RPC Endpoints:**\n- **Flashbots Protect** - Private mempool routing + gas fee refunds\n- **mevblocker.io** - MEV protection service\n- **dRPC** - MEV protection (premium feature, $1+/unit)\n\n### **Via Wallets with Built-in Protection:**\n- **Trust Wallet** - Toggle MEV Protection in swap settings\n- **OKX Wallet** - MEV protection available\n- **TokenPocket Wallet** - MEV protection avail"
+        }
+      ]
+    },
+    {
+      "protocol_id": "serum",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_dex_solana",
+          "query": "What's the best DEX on Solana?",
+          "matched_alias": "Serum",
+          "context": "e best swap rates. This makes it excellent for finding optimal trading prices.\n\n**Other Major DEXs:**\n- **Raydium** - One of the core AMMs on Solana\n- **Orca** - Popular for user-friendly trading\n- **Serum** - Another established option\n\n## How to Choose\n\nThe \"best\" DEX depends on:\n- **Best rates**: Jupiter (aggregator advantage)\n- **Low fees**: Solana DEXs generally offer faster, cheaper trades than o"
+        }
+      ]
+    },
+    {
+      "protocol_id": "arbitrum-bridge",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_l2_for_users",
+          "query": "Which Ethereum L2 should I use for everyday DeFi?",
+          "matched_alias": "Arbitrum Bridge",
+          "context": "ed, consumer-friendly), but lacks Arbitrum's DeFi \"gravity\" ([1]). Others shine in specifics (e.g., zkSync for security), but Arbitrum wins for everyday DeFi reliability.\n\n**Quick Start**: Bridge via Arbitrum Bridge (bridge.arbitrum.io), use wallets like MetaMask. Fees: often < $0.01. Track via DefiLlama or Dune Analytics for live metrics."
+        }
+      ]
+    },
+    {
+      "protocol_id": "renzo",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_restaking",
+          "query": "What's the best restaking protocol on Ethereum?",
+          "matched_alias": "Renzo",
+          "context": "     |\n| **Symbiotic** | Chain-agnostic, supports any ERC-20 collateral; customizable vaults/modules | Modular design, permissionless    | Flexibility, non-ETH assets | [2] ChainUp              |\n| **Renzo**   | Reliable liquid restaking token (ezETH) | Top reliability pick              | User-friendly liquidity     | [4] YouTube 2026 top 7  |\n\n### Quick Context on Restaking\nRestaking lets staked ETH s"
+        }
+      ]
+    },
+    {
+      "protocol_id": "convex-finance",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Convex Finance",
+          "context": "ecommendations\n\n1. **Yearn Finance** – The pioneering \"yield cow\" of DeFi, continuously innovating vault strategies since early 2020. Best for advanced farmers seeking sophisticated strategies.\n\n2. **Convex Finance** – A CRV token boosting protocol that optimizes Curve Finance yields.\n\n3. **Beefy Finance** – A multi-chain yield optimizer that removes the hassle of daily harvests. Excellent for set-it-and-forget"
+        }
+      ]
+    },
+    {
+      "protocol_id": "curve-dex",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Curve Finance",
+          "context": "\" of DeFi, continuously innovating vault strategies since early 2020. Best for advanced farmers seeking sophisticated strategies.\n\n2. **Convex Finance** – A CRV token boosting protocol that optimizes Curve Finance yields.\n\n3. **Beefy Finance** – A multi-chain yield optimizer that removes the hassle of daily harvests. Excellent for set-it-and-forget-it investors.\n\n4. **Harvest Finance** – An automated yield max"
+        }
+      ]
+    },
+    {
+      "protocol_id": "vesper",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "rec_yield_aggregator",
+          "query": "What are the best yield aggregators in DeFi?",
+          "matched_alias": "Vesper",
+          "context": " that farms the highest yields from new DeFi protocols using the latest techniques.\n\n5. **Idle Finance** – Perfect for passive investors seeking a \"set and forget\" approach to yield generation.\n\n6. **Vesper Finance** – Offers versatile yield aggregation for passive income streams.\n\n7. **Kamino Finance** – Specializes in capital-efficient DeFi liquidity management.\n\n## Key Considerations\n\n- **For beginne"
+        }
+      ]
+    },
+    {
+      "protocol_id": "phemex",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_ethena_safety",
+          "query": "Is Ethena USDe safe to hold?",
+          "matched_alias": "Phemex",
+          "context": " solely to vetted OES (On-Exchange Settlement) providers like institutional custodians. Multiple audits, off-exchange custody, and DeFi integrations (Aave, Pendle) enhance composability (Ethena docs, Phemex).\n- **Resilience Shown**: No catastrophic failure to date. Depegs have been minor and recovered; shift to more stablecoin backing reduced organic risks (ChainArgos case study, Oct 2025).\n\n#### Major "
+        }
+      ]
+    },
+    {
+      "protocol_id": "rush",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_lst_depeg",
+          "query": "What's the risk of stETH depegging?",
+          "matched_alias": "rush",
+          "context": "shocks. | Terra (unrelated chain) hit stETH via leverage [2]. |\n\n**Likelihood**: Low in stable markets (arbitrage keeps peg ~0.5-2% variance). **High in volatility**—e.g., ETH price crash + unstaking rush could mimic 2022. Lido claims pools are \"safe\" short-term (buy at 1.3% discount), but warns leveraged users [1].\n\n### Mitigations and Lido's Stance\n- **Arbitrage**: Buy cheap stETH, stake/redeem for "
+        }
+      ]
+    },
+    {
+      "protocol_id": "team-finance",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_recent_audit_failures",
+          "query": "Which DeFi protocols have had recent audit issues or exploits?",
+          "matched_alias": "Team Finance",
+          "context": "# DeFi Protocols with Recent Audit Issues or Exploits\n\nBased on the search results, here are the key protocols with documented recent problems:\n\n## **Team Finance** ($14.5M Exploit)\n- Exploited despite multiple security audits from reputable firms\n- Hacken conducted 80% of their audits since inception\n- Also audited by Coinspect (March 2026) and CertiK (June 2"
+        }
+      ]
+    },
+    {
+      "protocol_id": "gain",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "risk_restaking",
+          "query": "What are the risks of restaking with EigenLayer?",
+          "matched_alias": "gain",
+          "context": "taking and destabilize Ethereum itself\n\n## **Systemic & Protocol-Level Risks**\n\n**Correlated Risk Problem:**\n- If the same stake is restaked across multiple AVSs by the same validator, the cumulative gain from malicious behavior may exceed losses from slashing\n- This creates a critical vulnerability at the network level\n\n**\"Nothing at Stake\" Problem:**\n- A validator who knows they'll be slashed on Eig"
+        }
+      ]
+    },
+    {
+      "protocol_id": "orbiter-finance",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_bridge_to_arbitrum",
+          "query": "What's the cheapest bridge to move USDC to Arbitrum?",
+          "matched_alias": "Orbiter Finance",
+          "context": "ys network gas\n\n**2. Canonical Bridge**\n- **Fee**: No protocol fee, only gas costs\n- **Tradeoff**: 7-day exit period (slower but cheapest if you can wait)\n\n**3. For Faster Transfers Under $100K**\n- **Orbiter Finance** or **Across Protocol** typically offer competitive rates\n\n**4. For Larger USDT/USDC Transfers**\n- **Stargate** becomes competitive at higher amounts\n- **CCTP** is cheapest for large native USDC tra"
+        }
+      ]
+    },
+    {
+      "protocol_id": "stargate",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_bridge_to_arbitrum",
+          "query": "What's the cheapest bridge to move USDC to Arbitrum?",
+          "matched_alias": "Stargate",
+          "context": "slower but cheapest if you can wait)\n\n**3. For Faster Transfers Under $100K**\n- **Orbiter Finance** or **Across Protocol** typically offer competitive rates\n\n**4. For Larger USDT/USDC Transfers**\n- **Stargate** becomes competitive at higher amounts\n- **CCTP** is cheapest for large native USDC transfers\n\n## How to Compare\n\nMany platforms (like intent-based orchestrators) quote across multiple bridges autom"
+        }
+      ]
+    },
+    {
+      "protocol_id": "index-coop",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_leverage_long_eth",
+          "query": "What's the cheapest way to leverage long ETH on-chain?",
+          "matched_alias": "Index Coop",
+          "context": "# Cheapest Ways to Leverage Long ETH On-Chain\n\nBased on the search results, here are the most cost-effective on-chain options:\n\n## 1. **ETH2x-FLI (Most Accessible)**\n- **Where**: Index Coop (app.indexcoop.com/ethfli)\n- **How**: Buy via Uniswap with a simple UI\n- **Leverage**: 2x automated leverage\n- **Advantages**: \n  - Low-risk, automated rebalancing\n  - Available on Polygon for cheape"
+        }
+      ]
+    },
+    {
+      "protocol_id": "save",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_short_btc",
+          "query": "What's the best way to short Bitcoin in DeFi?",
+          "matched_alias": "Save",
+          "context": " functions available for risk management\n- **Key consideration:** Subject to liquidation risk if price moves against you with leverage\n\n## **2. Lending & Borrowing Protocols**\n- **Platform example:** Save\n- **Process:**\n  1. Deposit collateral into the protocol\n  2. Borrow Bitcoin\n  3. Sell the borrowed BTC at current market price\n  4. Buy back BTC at a lower price\n  5. Return the borrowed asset and k"
+        }
+      ]
+    },
+    {
+      "protocol_id": "deribit",
+      "total_mentions": 1,
+      "by_provider": {
+        "perplexity/sonar-pro": 1
+      },
+      "sample_contexts": [
+        {
+          "provider": "perplexity/sonar-pro",
+          "query_id": "tac_short_btc",
+          "query": "What's the best way to short Bitcoin in DeFi?",
+          "matched_alias": "Deribit",
+          "context": "and keep the profit\n- **Advantage:** More straightforward approach without derivatives complexity\n- **Risk:** Borrowing costs and collateral requirements\n\n## **3. Options (Advanced)**\n- **Platform:** Deribit (specializes in crypto options)\n- **Method:** Buy put options to short Bitcoin with limited downside risk\n- **Advantage:** Maximum loss is limited to the premium paid\n\n## **Key Considerations:**\n- **"
+        }
+      ]
+    }
+  ],
+  "top_citation_hosts": [
+    {
+      "host": "www.youtube.com",
+      "count": 25
+    },
+    {
+      "host": "www.binance.com",
+      "count": 15
+    },
+    {
+      "host": "www.coingecko.com",
+      "count": 14
+    },
+    {
+      "host": "www.quicknode.com",
+      "count": 13
+    },
+    {
+      "host": "www.alchemy.com",
+      "count": 12
+    },
+    {
+      "host": "defillama.com",
+      "count": 9
+    },
+    {
+      "host": "www.kucoin.com",
+      "count": 8
+    },
+    {
+      "host": "de.fi",
+      "count": 7
+    },
+    {
+      "host": "www.kraken.com",
+      "count": 6
+    },
+    {
+      "host": "bingx.com",
+      "count": 5
+    },
+    {
+      "host": "www.cointracker.io",
+      "count": 5
+    },
+    {
+      "host": "coinmarketcap.com",
+      "count": 5
+    },
+    {
+      "host": "www.dlnews.com",
+      "count": 5
+    },
+    {
+      "host": "eco.com",
+      "count": 4
+    },
+    {
+      "host": "www.mexc.com",
+      "count": 4
+    },
+    {
+      "host": "coincodex.com",
+      "count": 4
+    },
+    {
+      "host": "defiprime.com",
+      "count": 3
+    },
+    {
+      "host": "www.ledger.com",
+      "count": 3
+    },
+    {
+      "host": "milkroad.com",
+      "count": 3
+    },
+    {
+      "host": "phemex.com",
+      "count": 3
+    },
+    {
+      "host": "www.ledn.io",
+      "count": 3
+    },
+    {
+      "host": "www.gate.com",
+      "count": 3
+    },
+    {
+      "host": "www.stakingrewards.com",
+      "count": 3
+    },
+    {
+      "host": "www.figment.io",
+      "count": 3
+    },
+    {
+      "host": "www.blockdaemon.com",
+      "count": 3
+    },
+    {
+      "host": "yellow.com",
+      "count": 3
+    },
+    {
+      "host": "www.coinbase.com",
+      "count": 3
+    },
+    {
+      "host": "crypto.com",
+      "count": 3
+    },
+    {
+      "host": "www.halborn.com",
+      "count": 3
+    },
+    {
+      "host": "web3.gate.com",
+      "count": 2
+    },
+    {
+      "host": "archlending.com",
+      "count": 2
+    },
+    {
+      "host": "defirate.com",
+      "count": 2
+    },
+    {
+      "host": "coinranking.com",
+      "count": 2
+    },
+    {
+      "host": "www.chainup.com",
+      "count": 2
+    },
+    {
+      "host": "www.dextools.io",
+      "count": 2
+    },
+    {
+      "host": "ethereum.org",
+      "count": 2
+    },
+    {
+      "host": "fensory.com",
+      "count": 2
+    },
+    {
+      "host": "www.dune.com",
+      "count": 2
+    },
+    {
+      "host": "zerion.io",
+      "count": 2
+    },
+    {
+      "host": "www.imperator.co",
+      "count": 2
+    },
+    {
+      "host": "www.bankless.com",
+      "count": 2
+    },
+    {
+      "host": "godex.io",
+      "count": 2
+    },
+    {
+      "host": "nexo.com",
+      "count": 2
+    },
+    {
+      "host": "www.tradingview.com",
+      "count": 2
+    },
+    {
+      "host": "bitcoinfoundation.org",
+      "count": 2
+    },
+    {
+      "host": "blog.berachain.com",
+      "count": 2
+    },
+    {
+      "host": "drpc.org",
+      "count": 2
+    },
+    {
+      "host": "daic.capital",
+      "count": 2
+    },
+    {
+      "host": "getblock.io",
+      "count": 2
+    },
+    {
+      "host": "blockworks.com",
+      "count": 2
+    }
+  ]
+}
