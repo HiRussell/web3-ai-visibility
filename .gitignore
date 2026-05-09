@@ -30,6 +30,7 @@ build/
 
 # Personal drafts / strategy notes — keep local only
 frontend/tweets.md
+frontend/show-hn.md
 
 # Vercel CLI local state
 .vercel/
